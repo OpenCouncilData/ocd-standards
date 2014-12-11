@@ -23,8 +23,8 @@ Trees registers contain locations and information about individual trees within 
 Format: CSV (preferred), Shapefile, GeoJSON
 
 Required fields:
-* `**Lat**`: Latitude
-* `**Lon**`: Longitude
+* `Lat`: Latitude
+* `Lon`: Longitude
 
 Recommended fields:
 
