@@ -23,8 +23,8 @@ Trees registers contain locations and information about individual trees within 
 Format: CSV (preferred), Shapefile, GeoJSON
 
 Required fields:
-* `Lat`: Latitude
-* `Lon`: Longitude
+* `lat`: Latitude
+* `lon`: Longitude
 
 Recommended fields:
 
@@ -34,6 +34,19 @@ Recommended fields:
 * `useful_life_min`: Lower bound on useful life expectancy, when surveyed, in years.
 * `useful_life_max`: Upper bound on useful life expectancy, when surveyed, in years. Blank means an unbounded range, like "20+ 
 years".
+
+Optional fields:
+* `crown_width`: Width in metres of the tree's foliage (also known as crown spread).
+* `height`: Height in metres
+* `common_name`: Common name for species (non-standardised)
+* `location_type`: Where the tree is located: `park`, `street`, `council`, 
+* `ref`: Council-specific identifier
+* `maintenance_frequency`: number of months, how often the tree is inspected.
+* `maturity`: `young`, `semi-mature`, `mature`, `over-mature`
+* `planted_date`: date of planting, in ISO8601
+* `captured_date`: date of addition to database, in ISO8601
+* `health`: Health of tree growth: `dead`, `poor`,`fair`,`good`
+* `structure`: Solidity of tree, unlikelihood of falling. `failed`, `poor`, `fair`, `good 
 
 #### Garbage collection zones
 
