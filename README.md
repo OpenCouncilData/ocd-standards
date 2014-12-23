@@ -16,6 +16,12 @@ This project arose during the course of Steve Bennett's stint as [data guru in r
 
 ### Standards
 
+General guidelines:
+
+* All date fields should be provided as ISO8601 ("2014-11-03")
+* Additional fields can (and should) be provided, but should be included after recommended fields.
+* Numeric values should be provided as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
+
 #### Trees
 
 Trees registers contain locations and information about individual trees within the council boundaries. They usually include "street trees", sometimes "park trees", but rarely trees on private property or in bushland. Reasons for collecting the data including planning future growth or maintenance of canopy cover, and managing risk of falling branches.
@@ -28,29 +34,29 @@ Required fields:
 
 Recommended fields:
 
-* `genus`: Botanical genus
-* `species`: Botanical genus
-* `dbh`: Diameter at breast height (130cm above ground), in centimetres.
-* `useful_life_min`: Lower bound on useful life expectancy, when surveyed, in years.
+* `genus`: Botanical genus, in title case. eg: `Eucalyptus`
+* `species`: Botanical genus, in title case. eg: `Regnans`
+* `dbh`: Diameter at breast height (130cm above ground), in centimetres. eg: `60`
+* `useful_life_min`: Lower bound on useful life expectancy, when surveyed, in years. eg: `15`
 * `useful_life_max`: Upper bound on useful life expectancy, when surveyed, in years. Blank means an unbounded range, like "20+ 
-years".
+years". eg: `25`
 
 Optional fields:
-* `crown_width`: Width in metres of the tree's foliage (also known as crown spread).
-* `height`: Height in metres
-* `common_name`: Common name for species (non-standardised)
-* `location_type`: Where the tree is located: `park`, `street`, `council`, 
-* `ref`: Council-specific identifier
-* `maintenance_frequency`: number of months, how often the tree is inspected.
-* `maturity`: `young`, `semi-mature`, `mature`, `over-mature`
-* `planted_date`: date of planting, in ISO8601
-* `captured_date`: date of addition to database, in ISO8601
-* `health`: Health of tree growth: `dead`, `poor`,`fair`,`good`
-* `structure`: Solidity of tree, unlikelihood of falling. `failed`, `poor`, `fair`, `good 
+* `crown_width`: Width in metres of the tree's foliage (also known as crown spread). eg: `6`
+* `height`: Height in metres. eg: `4`
+* `common_name`: Common name for species (non-standardised), in title case. eg: `Myrtle Beech`
+* `location_type`: Where the tree is located: `park`, `street`, `council`
+* `ref`: Council-specific identifier, enabling joining to other datasets. eg `9128`
+* `maintenance_frequency`: number of months, how often the tree is inspected. eg `24`
+* `maturity`: one of `young`, `semi-mature`, `mature`, `over-mature`
+* `planted_date`: date of planting, in ISO8601. eg `1998-04-02`
+* `captured_date`: date of addition to database, in ISO8601. eg `2012-06-08`
+* `health`: Health of tree growth: one of `dead`, `poor`,`fair`,`good`
+* `structure`: Solidity of tree, unlikelihood of falling. One of `failed`, `poor`, `fair`, `good 
 
 #### Garbage collection zones
 
-Zones are areas within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.
+Zones are physical regions within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.
 
 * To resolve: Is it better to have one polygon per waste type (and hence, several overlapping), or one polygon per zone, with repeated fields (eg, recycle_schedule, green_schedule, etc).
 
@@ -70,6 +76,8 @@ Recommended fields:
 
 Optional fields:
 * `description`: A free text field.
-* `rubbish_comment`, `green_comment`, `recycling_comment`: free text fields with specific comments about each kind of waste in this collection.
+* `rubbish_comment`: free text field with specific comments about rules for acceptable rubbish collection.
+* `recycling_comment`: free text field with specific comments about rules for acceptable waste for recycling.
+* `green_comment`: free text field with specific comments about rules for acceptable green waste.
 * `info_url`: The page on your council website with information about garbage collection, eg http://www.geelongaustralia.com.au/residents/waste/ This can be an alternative to, or in addition to, a description field.
 * `missed_collection_phone`: The phone number to call for a missed rubbish collection.
