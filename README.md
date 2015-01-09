@@ -2,7 +2,7 @@
 
 This repository contains lightweight standards for the publishing of council data. It's developed for councils in Victoria, Australia, but would probably apply to other states - and maybe elsewhere, too.
 
-**See it online at http://okfnau.github.io/open-council-data/ **
+**See it online at http://okfnau.github.io/open-council-data/**
 
 The primary goal: to allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
 
