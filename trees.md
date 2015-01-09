@@ -4,12 +4,12 @@ Trees registers contain locations and information about individual trees within 
 
 Format: CSV (preferred), Shapefile, GeoJSON
 
-Required fields:
+####Required fields:
 
 * `lat`: Latitude, decimal degrees.
 * `lon`: Longitude, decimal degrees.
 
-Recommended fields:
+####Recommended fields:
 
 * `genus`: Botanical genus, in title case. eg: `Eucalyptus`
 * `species`: Botanical genus, in title case. eg: `Regnans`
@@ -18,7 +18,7 @@ Recommended fields:
 * `ule_max`: Upper bound on useful life expectancy, when surveyed, in years. Blank means an unbounded range, like "20+ 
 years". eg: `25`
 
-Optional fields:
+####Optional fields:
 
 * `crown`: Width in metres of the tree's foliage (also known as crown spread). eg: `6`
 * `height`: Height in metres. eg: `4`
