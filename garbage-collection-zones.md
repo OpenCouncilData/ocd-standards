@@ -8,14 +8,14 @@ Format: GeoJSON (preferred), Zipped shapefile
 
 Required fields:
 
-At least one of the following fields should have a value. If multiple collection types share a zone, publish a single polygon with values in several columns. For example, in one area, rubbish is collected on Tuesdays, and recycling is every second Thursday. If the zones are different (even if overlapping), publish multiple polygons.
+*At least one of the following fields should have a value. If multiple collection types share a zone, publish a single polygon with values in several columns. For example, in one area, rubbish is collected on Tuesdays, and recycling is every second Thursday. If the zones are different (even if overlapping), publish multiple polygons.*
 
-Schedules are repeated intervals expressed in ISO8601. For example, `R/2014-09-08/P2W` (every 2 weeks, starting from Monday 8 Sep 2014). It's as simple as `R/` *`YYYY-MM-DD`*` /PxW` where `x` is 1 for weekly, 2 for fortnightly, 4 for quasi-monthly, etc.
-
-* `rub_sched`: Schedule for general household rubbish, as above. 
-* `rec_sched`: Recycling schedule as above.
-* `grn_sched`: Schedule for green waste collection, as above.
+* `rub_sched`: Schedule for general household rubbish.
+* `rec_sched`: Recycling schedule.
+* `grn_sched`: Schedule for green waste collection.
 * `*_sched`: Schedule for some other kind of collection, as applicable. (Eg,  `hw_sched` for hard waste). Document these fields.
+
+Schedules are repeated intervals expressed in ISO8601: `R/` *`YYYY-MM-DD`*` /PxW` where `x` is 1 for weekly, 2 for fortnightly, 4 for quasi-monthly. For example, `R/2014-09-08/P2W` (every 2 weeks, starting from Monday 8 Sep 2014). 
 
 Recommended fields:
 
