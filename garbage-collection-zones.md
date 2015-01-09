@@ -16,9 +16,11 @@ At least one of the following fields should have a value. If multiple collection
 * `*_schedule`: Schedule for some other kind of collection, as applicable. (Eg,  `hardwaste_schedule`).
 
 Recommended fields:
+
 * `name`: a short name used by your council to identify a zone, such as "Monday waste collection 2" or "Tuesday Area 1".
 
 Optional fields:
+
 * `description`: A free text field.
 * `rubbish_comment`: free text field with specific comments about rules for acceptable rubbish collection.
 * `recycling_comment`: free text field with specific comments about rules for acceptable waste for recycling.

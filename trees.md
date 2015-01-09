@@ -5,6 +5,7 @@ Trees registers contain locations and information about individual trees within 
 Format: CSV (preferred), Shapefile, GeoJSON
 
 Required fields:
+
 * `lat`: Latitude, decimal degrees.
 * `lon`: Longitude, decimal degrees.
 
@@ -18,6 +19,7 @@ Recommended fields:
 years". eg: `25`
 
 Optional fields:
+
 * `crown`: Width in metres of the tree's foliage (also known as crown spread). eg: `6`
 * `height`: Height in metres. eg: `4`
 * `common`: Common name for species (non-standardised), in title case. eg: `Myrtle Beech`
