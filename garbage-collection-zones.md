@@ -28,4 +28,4 @@ Optional fields:
 * `rec_cmt`: free text field with specific comments about rules for acceptable waste for recycling.
 * `grn_cmt`: free text field with specific comments about rules for acceptable green waste.
 * `info_url`: The page on your council website with information about garbage collection, eg http://www.geelongaustralia.com.au/residents/waste/ This can be an alternative to, or in addition to, a description field.
-* `missed_col`: The phone number to call for a missed rubbish collection.
+* `missed_ph`: The phone number to call for a missed rubbish collection.
