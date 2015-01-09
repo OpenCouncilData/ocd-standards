@@ -16,7 +16,7 @@ We try to make conforming to the standard as easy as possible.
 1. As few required fields as possible.
 2. Standards are for **transforming** already-collected data. Standards for **collecting** data is as harder problem.
 3. The simplest transformation is simply renaming a field, so let's do that.
-
+4. Field names must be 10 characters or fewer, due to Shapefile attribute limitations.
 
 ### General guidelines
 
