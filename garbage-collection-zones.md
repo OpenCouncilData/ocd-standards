@@ -1,4 +1,4 @@
-## Garbage collection zones
+### Garbage collection zones
 
 Zones are physical regions within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.
 
