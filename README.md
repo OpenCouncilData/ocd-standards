@@ -1,4 +1,4 @@
-## Open Council Data
+# Open Council Data
 
 This repository contains lightweight standards for the publishing of council data. It's developed for councils in Victoria, Australia, but would probably apply to other states - and maybe elsewhere, too.
 
@@ -16,7 +16,7 @@ We try to make conforming to the standard as easy as possible.
 3. The simplest transformation is simply renaming a field, so let's do that.
 
 
-### General guidelines:
+### General guidelines
 
 * All date fields should be provided as ISO8601 ("2014-11-03")
 * Additional fields can (and should) be provided, but should be included after recommended fields.
