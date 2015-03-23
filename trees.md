@@ -1,8 +1,12 @@
-## Trees 1.0
+## Trees 1.1
 
 Trees registers contain locations and information about individual trees within the council boundaries. They usually include "street trees", sometimes "park trees", but rarely trees on private property or in bushland. Reasons for collecting the data including planning future growth or maintenance of canopy cover, and managing risk of falling branches.
 
-Format: CSV (preferred), Shapefile, GeoJSON
+####General recommendations:
+
+* Format: CSV (preferred), Shapefile, GeoJSON
+* Dataset name: [Council name] Street and Park Trees
+* data.gov.au tag: `opencouncildata-trees-1.1`
 
 ####Required fields:
 

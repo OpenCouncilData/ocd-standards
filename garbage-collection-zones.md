@@ -1,10 +1,14 @@
-## Garbage collection zones 1.0
+## Garbage collection zones 1.1
 
 Zones are physical regions within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.
 
 * To resolve: Is it better to have one polygon per waste type (and hence, several overlapping), or one polygon per zone, with repeated fields (eg, recycle_schedule, green_schedule, etc).
 
-Format: GeoJSON (preferred), Zipped shapefile
+####General recommendations:
+
+* Format: GeoJSON (preferred), Zipped shapefile
+* Dataset name: [Council name] Garbage Collection Zones
+* data.gov.au tag: `opencouncildata-garbage-1.1`
 
 ####Required fields:
 

@@ -1,6 +1,12 @@
-## Toilets 1.0
+## Toilets 1.1
 
 Public toilets known about or operated by the council.
+
+####General recommendations:
+
+* Format: CSV (preferred), Shapefile, GeoJSON
+* Dataset name: [Council name] Public Toilets
+* data.gov.au tag: `opencouncildata-toilets-1.1`
 
 #### Required fields
 

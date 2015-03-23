@@ -1,8 +1,14 @@
-## Building accessibility ratings 1.0
+## Building accessibility ratings 1.1
 
 Some councils provide ratings on accessibility of buildings for wheelchair users. These ratings are in high demand by certain community groups wanting to choose venues suitable for all their members. These ratings may be available for only council buildings, or more broadly.
 
 There are no known standards for this kind of data, and some councils combine them in different ways (eg, a rating of 0, 1 or 2 for the building as a whole).
+
+####General recommendations:
+
+* Format: CSV (preferred), Shapefile, GeoJSON
+* Dataset name: [Council name] Building Accessibility Ratings
+* data.gov.au tag: `opencouncildata-building-accessibility-1.1`
 
 #### Required fields
 

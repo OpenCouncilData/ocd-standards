@@ -1,4 +1,4 @@
-## 3D buildings 0.1
+## 3D buildings 0.2
 
 A 3D model (not just outline plus height) of buildings and other physical features, used for planning, architecture and communicating proposed construction. Model files should be textured if possible.
 
@@ -9,8 +9,11 @@ A collection of 3D model files should be bundled with a point origin file, to co
 
 In the fields below, "council ID" means the text string identifying the council, given by the part of the council's website before ".vic.gov.au". Hence, "melbourne", "geelong", "corangamite" etc.
 
-#### Recommended format
-Autodesk 3DS. (It has many limitations but is widely used and understood.)
+####General recommendations:
+
+* Format: Autodesk 3DS. (It has many limitations but is widely used and understood.)
+* Dataset name: [Council name] 3D Buildings
+* data.gov.au tag: `opencouncildata-3d-buildings-0.2`
 
 #### Required fields for origins.csv
 
