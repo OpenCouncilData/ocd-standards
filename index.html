@@ -28,13 +28,16 @@
   <style>
     .menu .level-2 { font-size: 1.2em; }
     .menu .level-3 { font-size: 1.1em; }
+    iframe {
+      border: 1px solid whitesmoke;
+    }
   </style>
 </head>
 <body role='flatdoc'>
 
   <div class='header'>
     <div class='left'>
-      <h1>Your Project</h1>
+      <h1>Open Council Data</h1>
       <ul>
         <li><a href='https://github.com/okfnau/open-council-data'>View on GitHub</a></li>
         <li><a href='https://github.com/okfnau/open-council-data/issues'>Issues</a></li>
@@ -62,7 +65,13 @@
 
     ga('create', 'UA-54473923-5', 'auto');
     ga('send', 'pageview');
-
+    $(document).on('flatdoc:ready', function() {
+      $($(".content h3")[0]).before(
+        "<iframe width='100%' height='480' frameborder='0' "+
+        "src='http://stevage1.cartodb.com/viz/ac41a874-7b34-11e4-ac15-0e4fddd5de28/embed_map' "+
+        "allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>"+
+        "</iframe>");
+    });
   </script>
 </body>
 </html>
