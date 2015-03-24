@@ -6,9 +6,16 @@ This repository contains lightweight standards for the publishing of council dat
 
 The primary goal: to allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
 
-### Background
-This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Greater Geelong is now chairing the fortnightly
+This map shows the number of datasets (whether conforming to these standards or not) published by each council in Victoria. It is updated hourly,
+but does not automatically detect councils publishing their first dataset.
 
+<iframe width='100%' height='480' frameborder='0'
+src='http://stevage1.cartodb.com/viz/ac41a874-7b34-11e4-ac15-0e4fddd5de28/embed_map'
+allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+</iframe>
+
+### Background
+This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Greater Geelong is now chairing the fortnightly Skype calls.
 
 ### Principles
 We try to make conforming to the standard as easy as possible.

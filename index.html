@@ -30,6 +30,8 @@
     .menu .level-3 { font-size: 1.1em; }
     iframe {
       border: 1px solid whitesmoke;
+      box-shadow: 8px 8px 8px 4px lightgray;
+
     }
   </style>
 </head>
@@ -65,13 +67,6 @@
 
     ga('create', 'UA-54473923-5', 'auto');
     ga('send', 'pageview');
-    $(document).on('flatdoc:ready', function() {
-      $($(".content h3")[0]).before(
-        "<iframe width='100%' height='480' frameborder='0' "+
-        "src='http://stevage1.cartodb.com/viz/ac41a874-7b34-11e4-ac15-0e4fddd5de28/embed_map' "+
-        "allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>"+
-        "</iframe>");
-    });
   </script>
 </body>
 </html>
