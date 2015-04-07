@@ -1,4 +1,4 @@
-## Trees 1.1
+## Trees 1.2
 
 Trees registers contain locations and information about individual trees within the council boundaries. They usually include "street trees", sometimes "park trees", but rarely trees on private property or in bushland. Reasons for collecting the data including planning future growth or maintenance of canopy cover, and managing risk of falling branches.
 
@@ -36,6 +36,9 @@ years". eg: `25`
 * `maintenance`: number of months, how often the tree is inspected. eg `24`
 * `maturity`: one of `young`, `semi-mature`, `mature`, `over-mature`
 * `planted`: date of planting, in ISO8601. eg `1998-04-02`
-* `captured`: date of addition to database, in ISO8601. eg `2012-06-08`
-* `health`: Health of tree growth: one of `dead`, `poor`,`fair`,`good`
+* `updated`: date of addition to database or most recent revision, in ISO8601. eg `2012-06-08`
+* `health`: Health of tree growth: one of `stump`, `dead`, `poor`,`fair`,`good`
 * `structure`: Solidity of tree, unlikelihood of falling. One of `failed`, `poor`, `fair`, `good`
+* `variety`: Any part of the scientific name below species level, including subspecies or variety.
+* `description`: Other information about the tree that is not its scientific name or species.
+* `family`: Botanical family.
