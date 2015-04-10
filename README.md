@@ -1,10 +1,12 @@
 # Open Council Data
 
-This repository contains lightweight standards for the publishing of council data. It's developed for councils in Victoria, Australia, but would probably apply to other states - and maybe elsewhere, too.
+This repository contains lightweight standards for the publishing of council data. The standards are developed for councils in Victoria, Australia, but would probably apply to other states. 
 
 **See it online at http://opencouncil.data.org (http://okfnau.github.io/open-council-data/)**
 
-The primary goal: to allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
+### Why
+
+ To allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
 
 This map shows the number of datasets (whether conforming to these standards or not) published by each council in Victoria. It is updated hourly,
 but does not automatically detect councils publishing their first dataset.
@@ -13,6 +15,10 @@ but does not automatically detect councils publishing their first dataset.
 src='http://stevage1.cartodb.com/viz/ac41a874-7b34-11e4-ac15-0e4fddd5de28/embed_map'
 allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
 </iframe>
+
+### Who
+
+This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Greater Geelong) are currently leading the effort.
 
 ### Background
 This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Greater Geelong is now chairing the fortnightly Skype calls.
