@@ -1,14 +1,14 @@
-## Garbage collection zones 2.0
+## Garbage collection zones 2.1
 
 Zones are physical regions within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.
 
-* To resolve: Is it better to have one polygon per waste type (and hence, several overlapping), or one polygon per zone, with repeated fields (eg, recycle_schedule, green_schedule, etc).
+Zones that share the same boundaries should be provided as a single polygon with multiple sets of tags (`rub_day`, `grn_day` etc).
 
 ####General recommendations:
 
 * Format: GeoJSON (preferred), Zipped shapefile
 * Dataset name: [Council name] Garbage Collection Zones
-* data.gov.au tag: `opencouncildata-garbage-1.2`
+* data.gov.au tag: `opencouncildata-garbage-2.1`
 
 ####Required fields:
 
@@ -31,5 +31,11 @@ Zones are physical regions within which residential garbage collection of a give
 * `desc`: A free text field.
 * `rub_desc`: free text field with specific comments about rules for acceptable rubbish collection.
 * `rec_desc`, `grn_desc`, `hw_desc`: as above, for recycling, green waste, or hard waste comments.
-* `info_url`: The page on your council website with information about garbage collection, eg http://www.geelongaustralia.com.au/residents/waste/ This can be an alternative to, or in addition to, a description field.
+* `rub_url`: URL pointing to a page with more information specifically about rubbish collection
+* `rec_url`, `grn_url`, `hw_url`: as above, for pages specifically about each collection type. If there is no page specifically about a type, leave it blank and use the `info_url` field.
+* `rub_scope`: one of `all` (all residents receive this service), `optional` (residents need to sign up to the service), `booked` (residents sign up for individual collection dates)
+* `rec_scope`, `grn_scope`, `hw_scope`: as above for other collection types.
+* `rub_ok`, `rec_ok`,`grn_ok`, `hw_ok`: semi-colon separated list of things that can be included in this collection type. For example: `Plastic bottles; tin cans`
+* `rub_notok`, `rec_notok`, `grn_notok`, `hw_notok`: semi-colon separated list of things that must not be included in this collection type. For example: `Nappies; car batteries`.
+* `info_url`: The page on your council website with information about garbage collection in general, eg http://www.geelongaustralia.com.au/residents/waste/ This can be an alternative to, or in addition to, a description field.
 * `missed_ph`: The phone number to call for a missed rubbish collection.
