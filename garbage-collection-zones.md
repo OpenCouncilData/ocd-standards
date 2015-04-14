@@ -1,4 +1,4 @@
-## Garbage collection zones 2.1
+## Garbage collection zones 2.2
 
 Zones are physical regions within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.
 
@@ -8,14 +8,14 @@ Zones that share the same boundaries should be provided as a single polygon with
 
 * Format: GeoJSON (preferred), Zipped shapefile
 * Dataset name: [Council name] Garbage Collection Zones
-* data.gov.au tag: `opencouncildata-garbage-2.1`
+* data.gov.au tags: `waste-collection`, `ocd-garbage`, `ocd-garbage-2.1`
 
 ####Required fields:
 
 *At least one of the following fields should have a value. If multiple collection types share a zone, publish a single polygon with values in several columns. For example, in one area, rubbish is collected on Tuesdays, and recycling is every second Thursday. If the zones are different (even if overlapping), publish multiple polygons.*
 
 * `rub_day`: Day of the week when rubbish is collected. (E.g., `monday`)
-* `rub_weeks`: Number of weeks between rubbish collections. (E.g. `2` for fortnightly)
+* `rub_weeks`: Number of weeks between rubbish collections. Leave blank for one-off or irregular collections. (E.g. `2` for fortnightly)
 * `rub_start`: Date of one rubbish collection, to calculate future collection dates from, in ISO 8601. E.g. `2015-04-01`.
 * `rub_dates`: (optional) Comma-separated list of dates of future collections. Use this for irregular collections, or in addition to other fields to facilitate data use. E.g. `2015-04-01,2015-04-08,2015-04-15,2015-04-22`
 * `rec_day`,`rec_weeks`, `rec_start`,`rec_dates`: Schedule for recycling collection, as above.
@@ -29,6 +29,8 @@ Zones that share the same boundaries should be provided as a single polygon with
 ####Optional fields:
 
 * `desc`: A free text field.
+* `rub_name`: A short name describing the physical bin used for rubbish (for example, `Landfill bin (red lid`)
+* `rec_name`, `grn_name`, `hw_name`: As above for other collections types (for example `Black recycling tub`, `Garden waste bin`)
 * `rub_desc`: free text field with specific comments about rules for acceptable rubbish collection.
 * `rec_desc`, `grn_desc`, `hw_desc`: as above, for recycling, green waste, or hard waste comments.
 * `rub_url`: URL pointing to a page with more information specifically about rubbish collection
