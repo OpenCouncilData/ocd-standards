@@ -1,4 +1,4 @@
-## Trees 1.2
+## Trees 1.3
 
 Trees registers contain locations and information about individual trees within the council boundaries. They usually include "street trees", sometimes "park trees", but rarely trees on private property or in bushland. Reasons for collecting the data including planning future growth or maintenance of canopy cover, and managing risk of falling branches.
 
@@ -10,7 +10,9 @@ Trees registers contain locations and information about individual trees within 
 
 * Format: CSV (preferred), Shapefile, GeoJSON
 * Dataset name: [Council name] Street and Park Trees
-* data.gov.au tag: `opencouncildata-trees-1.1`
+* data.gov.au tag: `trees`, `opencouncildata`, `ocd-trees-1.3`
+* When information is available only as a range (eg, diameter is recorded as 100-150cm), the middle of the range should be presented as the field name, with an additional `_min` and `_max`. For example, `dbh`: 125, `dbh_min`: 100, `dbh_max`, 150. 
+* If the information is only available as an unbounded range (eg, height greater than 5 metres), then do the same with no `_max`. For example, `height`: 4, `height_min`: 4.
 
 ####Required fields:
 
@@ -20,15 +22,15 @@ Trees registers contain locations and information about individual trees within 
 
 * `genus`: Botanical genus, in title case. eg: `Eucalyptus`
 * `species`: Botanical genus, in title case. eg: `Regnans`
-* `dbh`: Diameter at breast height (130cm above ground), in centimetres. eg: `60`
+* `dbh`: Diameter at breast height (130cm above ground), in centimetres. eg: `60`. (See *General recommendations* for ranges.)
 * `ule_min`: Lower bound on useful life expectancy, when surveyed, in years. eg: `15`
 * `ule_max`: Upper bound on useful life expectancy, when surveyed, in years. Blank means an unbounded range, like "20+ 
 years". eg: `25`
 
 ####Optional fields:
 
-* `crown`: Width in metres of the tree's foliage (also known as crown spread). eg: `6`
-* `height`: Height in metres. eg: `4`
+* `crown`: Width in metres of the tree's foliage (also known as crown spread). eg: `6` (See *General recommendations* for ranges.) 
+* `height`: Height in metres. eg: `4`. (See *General recommendations* for ranges.)
 * `common`: Common name for species (non-standardised), in title case. eg: `Myrtle Beech`
 * `location`: Where the tree is located: `park`, `street`, `council`
 * `ref`: Council-specific identifier, enabling joining to other datasets. eg `9128`
@@ -41,3 +43,5 @@ years". eg: `25`
 * `variety`: Any part of the scientific name below species level, including subspecies or variety.
 * `description`: Other information about the tree that is not its scientific name or species.
 * `family`: Botanical family.
+* `dbh_min`, `dbh_max`, `height_min`, `height_max`, `crown_min`, `crown_max`:  See *General recommendations*.
+* `address`: Street address.
