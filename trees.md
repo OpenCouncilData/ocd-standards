@@ -21,11 +21,10 @@ Trees registers contain locations and information about individual trees within 
 ####Recommended fields:
 
 * `genus`: Botanical genus, in title case. eg: `Eucalyptus`
-* `species`: Botanical genus, in title case. eg: `Regnans`
+* `species`: Botanical genus, in title case. Leave blank if not known (not "Sp."). eg: `Regnans`
 * `dbh`: Diameter at breast height (130cm above ground), in centimetres. eg: `60`. (See *General recommendations* for ranges.)
-* `ule_min`: Lower bound on useful life expectancy, when surveyed, in years. eg: `15`
-* `ule_max`: Upper bound on useful life expectancy, when surveyed, in years. Blank means an unbounded range, like "20+ 
-years". eg: `25`
+* `year_min`: Lower bound on year that tree is expected to live to. (That is, a tree surveyed in 2008 with useful life expectancy range of 10-15 years would be `2018`).
+* `year_max`: Upper bound on year that tree is expected to live to. (`2023` in this example)
 
 ####Optional fields:
 
@@ -44,4 +43,7 @@ years". eg: `25`
 * `description`: Other information about the tree that is not its scientific name or species.
 * `family`: Botanical family.
 * `dbh_min`, `dbh_max`, `height_min`, `height_max`, `crown_min`, `crown_max`:  See *General recommendations*.
+* `ule_min`: Lower bound on useful life expectancy, when surveyed, in years. eg: `15`
+* `ule_max`: Upper bound on useful life expectancy, when surveyed, in years. Blank means an unbounded range, like "20+ 
+years". eg: `25`
 * `address`: Street address.
