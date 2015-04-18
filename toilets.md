@@ -1,12 +1,12 @@
-## Toilets 1.1
+## Toilets 1.2
 
 Public toilets known about or operated by the council.
 
 ####General recommendations:
 
-* Format: CSV (preferred), Shapefile, GeoJSON
+* Format: CSV (preferred), GeoJSON, Shapefile, 
 * Dataset name: [Council name] Public Toilets
-* data.gov.au tag: `opencouncildata-toilets-1.1`
+* data.gov.au tag: `toilets`, `opencouncildata`, `ocd-toilets-1.2`
 
 #### Required fields
 
@@ -19,8 +19,8 @@ Public toilets known about or operated by the council.
 * `female`: Whether toilets for women are available (`yes`,`no`). (Tag unisex toilets as `yes`)
 * `male`: Whether toilets for men are available (`yes`, `no`). (Tag unisex toilets as `yes`)
 * `wheelchair`: Whether toilets accessible by wheelchair users are available. (`yes`, `no`)
-* `week_open`: What time the toilets open on weekdays, in 0-padded 24 hour time. `00:00` for always open.
-* `week_close`: What time the toilets close on weekdays, in 24 hour time. `24:00` for always open.
+* `week_open`: What time the toilets open on weekdays, in 0-padded 24 hour time. `00:00` for always open/closed.
+* `week_close`: What time the toilets close on weekdays, in 0-padded 24 hour time. `24:00` for always open, `00:00` for always closed.
 * `sat_open`: As above for Saturdays.
 * `sat_close`: As above for Saturdays.
 * `sun_open`: As above for Sundays.
