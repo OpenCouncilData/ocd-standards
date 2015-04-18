@@ -37,6 +37,10 @@ We try to make conforming to the standard as easy as possible.
 * Additional fields can (and should) be provided, but should be included after recommended fields.
 * Numeric values should be provided as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
 * Spatial data should presented as raw latitude/longitude ([EPSG:4326](http://spatialreference.org/ref/epsg/wgs-84/)), not eastings and northings (projected coordinates).
+* Unknown information should be indicated as:
+    - CSV: empty value (two consecutive commas)
+    - GeoJSON: no attribute (preferred), or ""
+    - Shapefile: no attribute (preferred), or ""
 
 ### Participate
 
