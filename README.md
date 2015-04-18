@@ -36,6 +36,7 @@ We try to make conforming to the standard as easy as possible.
 * All date fields should be provided as ISO8601 ("2014-11-03")
 * Additional fields can (and should) be provided, but should be included after recommended fields.
 * Numeric values should be provided as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
+* Spatial data should presented as raw latitude/longitude ([EPSG:4326](http://spatialreference.org/ref/epsg/wgs-84/)), not eastings and northings (projected coordinates).
 
 ### Participate
 

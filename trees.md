@@ -14,8 +14,7 @@ Trees registers contain locations and information about individual trees within 
 
 ####Required fields:
 
-* `lat`: Latitude, decimal degrees.
-* `lon`: Longitude, decimal degrees.
+* `lat`, `lon`: Latitude, longitude, decimal degrees. (EPSG:4326)
 
 ####Recommended fields:
 

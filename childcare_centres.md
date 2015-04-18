@@ -10,7 +10,7 @@ Facilities that look after young children during the day.
 
 #### Required fields
 
-* `lat`,`lon`: latitude and longitude
+* `lat`, `lon`: Latitude, longitude, decimal degrees. (EPSG:4326) 
 * `name`: Name of the centre
 
 #### Recommended fields

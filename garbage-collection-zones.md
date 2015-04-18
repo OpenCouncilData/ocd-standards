@@ -6,7 +6,7 @@ Zones that share the same boundaries should be provided as a single polygon with
 
 ####General recommendations:
 
-* Format: GeoJSON (preferred), Zipped shapefile
+* Format: GeoJSON (preferred) in EPSG:4326, Zipped shapefile
 * Dataset name: [Council name] Garbage Collection Zones
 * data.gov.au tags: `waste-collection`, `ocd-garbage`, `ocd-garbage-2.1`
 

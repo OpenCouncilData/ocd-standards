@@ -12,9 +12,8 @@ There are no known standards for this kind of data, and some councils combine th
 
 #### Required fields
 
-* `lat`: latitude, decimal degrees. (Centroid or entrance location of building)
-* `lon`: longitude, decimal degrees.
-
+* `lat`, `lon`: Latitude, longitude, decimal degrees of centroid or entrance to building. (EPSG:4326)
+* 
 #### Recommended fields
 * `entrance`: Access into the building and its main services. Use one of these values, or blank if unknown.
  * `yes`: an unpowered, wheelchair user can enter the building and access public services without assistance

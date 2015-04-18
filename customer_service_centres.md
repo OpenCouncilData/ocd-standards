@@ -11,9 +11,8 @@ Customer service centres are places where citizens go to pay fees (rates, fines,
 
 #### Required fields
 
-* `lat`: latitude
-* `lon`: longitude
-
+* `lat`, `lon`: Latitude, longitude, decimal degrees. (EPSG:4326)
+* 
 #### Recommended fields
 
 * `name`: A name identifying the centre. E.g. "Preston Customer Service Centre"

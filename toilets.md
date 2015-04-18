@@ -10,8 +10,7 @@ Public toilets known about or operated by the council.
 
 #### Required fields
 
-* `lat`: latitude, decimal degrees. (Centroid or entrance location of building)
-* `lon`: longitude, decimal degrees.
+* `lat`, `lon`: Latitude, longitude, decimal degrees of building centroid or entrance. (EPSG:4326)
 
 #### Recommended fields
 
