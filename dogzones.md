@@ -1,11 +1,11 @@
-## Dog zones 0.1
+## Dog walking zones 0.1
 
-Dog zones are regions which share restrictions or permissions on dog walking, including off-leash, on-leash, or prohibition. Councils are encouraged to provide comprehensive information on where dog walking is allowed or restricted, including other sources of regulations such as state or national parks.
+Dog walking zones are regions within which dog walking is permitted off-leash, on-leash, or not at all. Councils are encouraged to provide comprehensive information on where dog walking is allowed or restricted, including other sources of regulations such as state or national parks.
 
 ####General recommendations:
 
 * Format: GeoJSON (preferred) in EPSG:4326; zipped shapefile
-* Dataset name: [Council name] Garbage Collection Zones
+* Dataset name: [Council name] Dog Walking Zones
 * data.gov.au tags: `dog-walking`, `opencouncildata`, `ocd-dogzones-0.1`
 * Polygon areas should not overlap, with the single exception of the `Default` polygon described under `name`.
 
