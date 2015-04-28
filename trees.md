@@ -12,7 +12,7 @@ Trees registers contain locations and information about individual trees within 
 * Dataset name: [Council name] Street and Park Trees
 * data.gov.au tag: `trees`, `opencouncildata`, `ocd-trees-1.3`
 * When information is available only as a range (eg, diameter is recorded as 100-150cm), the middle of the range should be presented as the field name, with an additional `_min` and `_max`. For example, `dbh`: 125, `dbh_min`: 100, `dbh_max`, 150. 
-* If the information is only available as an unbounded range (eg, height greater than 5 metres), then do the same with no `_max`. For example, `height`: 4, `height_min`: 4.
+* If the information is only available as an unbounded range (eg, height greater than 5 metres), then do the same with no `_max`. For example, `height`: 5, `height_min`: 5.
 
 ####Required fields:
 
