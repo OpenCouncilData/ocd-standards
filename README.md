@@ -2,7 +2,7 @@
 
 This repository contains lightweight standards for the publishing of council data. The standards are developed for councils in Victoria, Australia, but would probably apply to other states. 
 
-**See it online at http://opencouncil.data.org (http://okfnau.github.io/open-council-data/)**
+**See it online at http://opencouncildata.org (http://okfnau.github.io/open-council-data/)**
 
 ### Why
 
