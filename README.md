@@ -1,6 +1,6 @@
 # Open Council Data
 
-This repository contains lightweight standards for the publishing of council data. The standards are developed for councils in Victoria, Australia, but would probably apply to other states. 
+This repository contains lightweight standards for the publishing of council data. The standards have initially been developed by councils in Victoria, Australia, but are open to other councils to use and participate in developing.
 
 **See it online at http://opencouncildata.org (http://okfnau.github.io/open-council-data/)**
 
@@ -46,7 +46,7 @@ We try to make conforming to the standard as easy as possible.
 
 You can help create and refine these standards by:
 
-* participating on the Google Group: [Open Data Working Group - Victoria](https://groups.google.com/forum/#!forum/opendatagroup)
+* participating on the [Open Council Data Google Group](https://groups.google.com/forum/#!forum/opencouncildata)
 * raising and commenting on issues on the [Github issue tracker](https://github.com/OKFNau/open-council-data/issues)
 * joining the fortnightly Skype chat (email Will McIntosh - wmcintosh@geelongcity.vic.gov.au )
 * coming to a weekly [Open Knowledge Melbourne meetup](www.meetup.com/Open-Knowledge-Melbourne/)
