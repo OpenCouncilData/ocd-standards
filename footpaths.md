@@ -6,7 +6,7 @@ Footpaths known about or maintained by the council.
 
 * Format: Polyline geospatial data. GeoJSON (preferred), Shapefile
 * Dataset name: [Council name] council footpaths
-* data.gov.au tag: `opencouncildata-footpaths-0.1`
+* data.gov.au tag: `footpaths`, `opencouncildata`, `ocd-footpaths-0.2`
 
 #### Required fields
 
