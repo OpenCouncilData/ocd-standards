@@ -4,7 +4,7 @@ Facilities that look after young children during the day.
 
 ####General recommendations:
 
-      | Recommendation
+&nbsp;| Recommendation
 ------|------------
 Format| Point data. CSV (preferred), GeoJSON
 Dataset name| [Council name] childcare centres

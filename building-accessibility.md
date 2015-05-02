@@ -6,7 +6,7 @@ There are no known standards for this kind of data, and some councils combine th
 
 ####General recommendations:
 
-      | Recommendations
+&nbsp;| Recommendation
 ------|------------
 Format| CSV (preferred), Shapefile, GeoJSON
 Dataset name| [Council name] Building Accessibility Ratings

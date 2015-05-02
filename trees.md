@@ -8,7 +8,7 @@ Trees registers contain locations and information about individual trees within 
 
 ####General recommendations:
 
-      | Recommendation
+&nbsp;| Recommendation
 ------|------------
 Format| CSV (preferred), Shapefile, GeoJSON
 Dataset name| [Council name] Street and Park Trees

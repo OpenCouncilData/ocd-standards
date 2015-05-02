@@ -11,7 +11,7 @@ In the fields below, "council ID" means the text string identifying the council,
 
 ####General recommendations:
 
-      | Recommendation
+&nbsp; | Recommendation
 ------|------------
 Format| Autodesk 3DS. (It has many limitations but is widely used and understood.) CityGML is another emerging possibility.
 Dataset name| [Council name] 3D Buildings

@@ -4,7 +4,7 @@ Public toilets known about or operated by the council.
 
 ####General recommendations:
 
-      | Recommendation
+&nbsp;| Recommendation
 ------|------------
 Format| CSV (preferred), GeoJSON, Shapefile, 
 Dataset name| [Council name] Public Toilets

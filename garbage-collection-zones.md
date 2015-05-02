@@ -10,7 +10,7 @@ Zones that share the same boundaries should be provided as a single polygon with
 
 ####General recommendations:
 
-      |Recommendation
+&nbsp;| Recommendation
 ------|------------
  Format| GeoJSON (preferred) in EPSG:4326, Zipped shapefile
  Dataset name| [Council name] Garbage Collection Zones

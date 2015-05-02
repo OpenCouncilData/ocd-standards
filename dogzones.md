@@ -4,7 +4,7 @@ Dog walking zones are regions within which dog walking is permitted off-leash, o
 
 ####General recommendations:
 
-      | Recommendation
+&nbsp;| Recommendation
 ------|------------
 Format| GeoJSON (preferred) in EPSG:4326; zipped shapefile
 Dataset name| [Council name] Dog Walking Zones
