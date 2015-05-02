@@ -1,4 +1,4 @@
-## Drainpipes 0.1
+## Drainpipes 0.2
 **([Comments welcome!](https|//github.com/okfnau/open-council-data/issues))**
 
 Drain pipes known about or maintained by the council.
@@ -9,7 +9,7 @@ Drain pipes known about or maintained by the council.
 ------|------------
 Format| GeoJSON (preferred), Shapefile
 Dataset name| [Council name] council drain pipes
-data.gov.au tag| `drainpipes`, `opencouncildata`, `ocd-drainpipes-0.1`
+data.gov.au tag| `drainpipes`, `opencouncildata`, `ocd-drainpipes-0.2`
 
 #### Required fields
 (none)
