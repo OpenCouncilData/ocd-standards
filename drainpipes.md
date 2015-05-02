@@ -5,9 +5,9 @@ Drain pipes known about or maintained by the council.
 
 ####General recommendations:
 
-&nbsp;| Recommendation
-------|------------
-Format| GeoJSON (preferred), Shapefile
+&nbsp; | Recommendation
+-------|------------
+Format | GeoJSON (preferred), Shapefile
 Dataset name| [Council name] council drain pipes
 data.gov.au tag| `drainpipes`, `opencouncildata`, `ocd-drainpipes-0.2`
 
