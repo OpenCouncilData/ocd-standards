@@ -5,7 +5,7 @@ Drain pipes known about or maintained by the council.
 
 ####General recommendations:
 
-    | Recommendation
+&nbsp;| Recommendation
 ------|------------
 Format| GeoJSON (preferred), Shapefile
 Dataset name| [Council name] council drain pipes
