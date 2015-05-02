@@ -28,7 +28,7 @@ field | description
 | `holiday`| Normal opening hours on public holidays.
 
 #### Optional fields
-field | description
+Field | Description
 ------|------------
-| `description`| Free text description of services or other information.
-| `phone`| Telephone number of this center, if any.
+`description`| Free text description of services or other information.
+`phone`| Telephone number of this center, if any.
