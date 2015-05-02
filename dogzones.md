@@ -1,4 +1,5 @@
-## Dog walking zones 0.1 ([comments welcome](https://github.com/okfnau/open-council-data/issues))
+## Dog walking zones 0.1
+**([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Dog walking zones are regions within which dog walking is permitted off-leash, on-leash, or not at all. Councils are encouraged to provide comprehensive information on where dog walking is allowed or restricted, including other sources of regulations such as state or national parks.
 

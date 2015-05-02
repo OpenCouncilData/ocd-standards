@@ -1,4 +1,5 @@
-## Drainpipes 0.1 ([comments welcome](https://github.com/okfnau/open-council-data/issues))
+## Drainpipes 0.1
+**([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Drain pipes known about or maintained by the council.
 

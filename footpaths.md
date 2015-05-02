@@ -1,4 +1,5 @@
 ## Footpaths 0.2
+**([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Footpaths known about or maintained by the council.
 

@@ -1,4 +1,5 @@
 ## Customer service centres 0.1
+**([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Customer service centres are places where citizens go to pay fees (rates, fines, pet registration), deposit planning applications, or otherwise interact with council services.
 

@@ -1,4 +1,5 @@
-## Road closures 0.1 ([comments welcome](https://github.com/okfnau/open-council-data/issues))
+## Road closures 0.1 
+**([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Locations of planned and unplanned road closures due to events, maintenance, natural events or other reasons. For maximum usefulness, this dataset should be updated whenever new information is available (perhaps hourly). Past closures should be removed from the dataset within a short period (eg, 1 day) in order to keep the whole dataset size manageable.
 
