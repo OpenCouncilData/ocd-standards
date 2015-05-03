@@ -1,4 +1,4 @@
-## Road closures 0.1 
+## Road closures 0.2
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Locations of planned and unplanned road closures due to events, maintenance, natural events or other reasons. For maximum usefulness, this dataset should be updated whenever new information is available (perhaps hourly). Past closures should be removed from the dataset within a short period (eg, 1 day) in order to keep the whole dataset size manageable.
@@ -9,7 +9,7 @@ Locations of planned and unplanned road closures due to events, maintenance, nat
 ------|------------
 Format| GeoJSON in EPSG:4326
 Dataset name| [Council name] Road Closures
-data.gov.au tags| `road-closures`, `opencouncildata`, `ocd-roadclosures-0.1`
+data.gov.au tags| `road-closures`, `opencouncildata`, `ocd-roadclosures-0.2`
 Spatial type|Line data is preferred (representing each segment of road that is affected), but points (general location of closure) and polygon (region in which all roads are closed) are acceptable.
 
 If possible, sort the data with most imminent closures first.
@@ -37,7 +37,8 @@ Field | Description
 Field | Description
 ------|------------
 `source`|The source of the closure, eg `Victoria Police`, `Western Energy`
-`impact`|The level of impact this is expected to have on traffic flows in the area, from `1` to `5`. This is intended to aid in filtering data for mapping.
+`delay_mins`|The number of minutes delay anticipated for motorists proceeding through an affected area. Can be either a single number `15` or a range `5-10`.
+`impact`|The level of impact this is expected to have on traffic flows in the area, from `1` (minimal) to `5` (severe). This is intended to aid in filtering data for mapping.
 `ref`| A council-specific identifier.
 `event_id`| A council-specific identifier for an associated event, if any.
 `url`|A website link for more information.
