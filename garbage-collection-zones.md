@@ -41,15 +41,11 @@ Field | Description|Example
 Field | Description|Example
 ------|------------|-------
 `desc`| A free text field.
-`rub_name`| A short name describing the physical bin used for rubbish|`Landfill bin (red lid`
-`rec_name`, `grn_name`, `hw_name`|`Black recycling tub`, `Garden waste bin`
-`rub_desc`| free text field with specific comments about rules for acceptable rubbish collection.|
-`rec_desc`, `grn_desc`, `hw_desc`| as above, for recycling, green waste, or hard waste comments.
-`rub_url`| URL pointing to a page with more information specifically about rubbish collection
-`rec_url`, `grn_url`, `hw_url`| as above, for pages specifically about each collection type. If there is no page specifically about a type, leave it blank and use the `info_url` field.
-`rub_scope`| one of:<br/> `all` (all residents receive this service)<br/> `optional` (residents need to sign up to the service),<br/> `booked` (residents sign up for individual collection dates)
-`rec_scope`, `grn_scope`, `hw_scope`| as above for other collection types.
-`rub_ok`, `rec_ok`,`grn_ok`, `hw_ok`| semi-colon separated list of things that can be included in this collection type.|`Plastic bottles; tin cans`
+`rub_name`, `rec_name`, `grn_name`, `hw_name`| A short name describing the physical bin used for that collection|`Landfill bin (red lid)`
+`rub_desc`, `rec_desc`, `grn_desc`, `hw_desc`| free text field with specific comments about rules for acceptable rubbish collection.|
+`rub_url`, `rec_url`, `grn_url`, `hw_url`| URL pointing to a page with more information specifically about each collection. If there is no page specifically about a type, leave it blank and use the `info_url` field.
+`rub_scope`, `rec_scope`, `grn_scope`, `hw_scope`| one of:<br/> `all` (all residents receive this service)<br/> `optional` (residents need to sign up to the service),<br/> `booked` (residents sign up for individual collection dates)
+`rub_ok`, `rec_ok`, `grn_ok`, `hw_ok`| semi-colon separated list of things that can be included in this collection type.|`Plastic bottles; tin cans`
 `rub_notok`, `rec_notok`, `grn_notok`, `hw_notok`| semi-colon separated list of things that must not be included in this collection type.|`Nappies; car batteries`.
 `info_url`| The page on your council website with information about garbage collection in general. This can be an alternative to, or in addition to, a description field. e.g. `http://www.geelongaustralia.com.au/residents/waste/`|
 `missed_ph`| The phone number to call for a missed rubbish collection.
