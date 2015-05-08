@@ -24,12 +24,12 @@ field | description
 | `services`| Comma-separated list of services provided by the centre. For example: "pet registration,parking fines,rates". Possible values include:<br/> `pet registration`, `parking fines`, `rates`, `planning`, `building permits`, *(or other, please provide feedback)*
 | `address` | Street address. E.g. "274 Gower Street, Preston, VIC 3072"
 | `languages`| Comma separated list of non-English languages spoken at the centre (or provided by phone interpreter), in ISO 639-1 (two-letter) codes. For example: `it,vi,zh`
-| `accessible`| Free text description of accessibility. For example: "Fully accessible to wheelchair users; disabled parking at front."
+| `access`| Free text description of accessibility. For example: "Fully accessible to wheelchair users; disabled parking at front."
 | `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`| Normal opening hours on each day, in 24 hour `HH:MM-HH:MM` format. For example: `08:00-17:30`.
 | `holiday`| Normal opening hours on public holidays.
 
 #### Optional fields
 Field | Description
 ------|------------
-`description`| Free text description of services or other information.
+`desc`| Free text description of services or other information.
 `phone`| Telephone number of this center, if any.
