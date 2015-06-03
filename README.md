@@ -50,3 +50,4 @@ You can help create and refine these standards by:
 * raising and commenting on issues on the [Github issue tracker](https://github.com/OKFNau/open-council-data/issues)
 * joining the fortnightly Skype chat (email Will McIntosh - wmcintosh@geelongcity.vic.gov.au )
 * coming to a weekly [Open Knowledge Melbourne meetup](www.meetup.com/Open-Knowledge-Melbourne/)
+* uploading your data to data.gov.au ([get started here]( https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au#Getting_an_account_on_data.gov.au))
