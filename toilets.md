@@ -24,6 +24,7 @@ Field | Description
 `female`| Whether toilets for women are available (`yes`,`no`). (Tag unisex toilets as `yes`)
 `male`| Whether toilets for men are available (`yes`, `no`). (Tag unisex toilets as `yes`)
 `wheelchair`| Whether toilets accessible by wheelchair users are available. (`yes`, `no`)
+`trsfr_side` | What side the transfer hand rail is located for the toilet to assist with getting up/down. (`left`, `right`)
 `week_open`| What time the toilets open on weekdays, in 0-padded 24 hour time. `00:00` for always open/closed.
 `week_close`| What time the toilets close on weekdays, in 0-padded 24 hour time. `24:00` for always open, `00:00` for always closed.
 `sat_open`| As above for Saturdays.
