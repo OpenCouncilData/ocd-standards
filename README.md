@@ -18,10 +18,19 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallo
 
 ### Who
 
-This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Greater Geelong) are currently leading the effort.
+This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Melbourne) are currently leading the effort.
 
 ### Background
-This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Greater Geelong is now chairing the fortnightly Skype calls.
+This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Melbourne is now chairing the fortnightly Skype calls.
+
+### How councils can get started
+* Adopt an Open Data policy
+  - The benefits of adopting a policy
+  - Download a template policy (that you can adapt)
+* [Create a data.gov.au account](https://toolkit.data.gov.au/index.php?title=Starting_on_datagovau#Getting_an_Account)
+* Extract your data using scripts/tools
+  - FME workspaces
+  - OGR scripts
 
 ### Principles
 We try to make conforming to the standard as easy as possible.
@@ -48,6 +57,6 @@ You can help create and refine these standards by:
 
 * participating on the [Open Council Data Google Group](https://groups.google.com/forum/#!forum/opencouncildata)
 * raising and commenting on issues on the [Github issue tracker](https://github.com/OKFNau/open-council-data/issues)
-* joining the fortnightly Skype chat (email Will McIntosh - wmcintosh@geelongcity.vic.gov.au )
+* joining the fortnightly Skype chat (email Will McIntosh - will.mcintosh@melbourne.vic.gov.au )
 * coming to a weekly [Open Knowledge Melbourne meetup](www.meetup.com/Open-Knowledge-Melbourne/)
 * uploading your data to data.gov.au ([get started here]( https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au#Getting_an_account_on_data.gov.au))
