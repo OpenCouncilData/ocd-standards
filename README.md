@@ -18,10 +18,22 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallo
 
 ### Who
 
+<<<<<<< HEAD
 This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (Melbourne City council) are currently leading the effort.
 
 ### Background
+This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Melbourne) are currently leading the effort.
+
+### Background
 This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Melbourne is now chairing the fortnightly Skype calls.
+
+### How councils can get started
+* Adopt an Open Data policy
+  - Download and adapt a template policy (links to come)
+* [Create a data.gov.au account](https://toolkit.data.gov.au/index.php?title=Starting_on_datagovau#Getting_an_Account)
+* Use tools to automatically extract and upload data
+  - FME workspaces
+  - OGR scripts
 
 ### Principles
 We try to make conforming to the standard as easy as possible.
