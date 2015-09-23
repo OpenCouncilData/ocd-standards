@@ -8,11 +8,11 @@ This repository contains lightweight standards for the publishing of council dat
 
  To allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
 
-This map shows the number of datasets (whether conforming to these standards or not) published by each council in Victoria. It is updated hourly,
+[The Open Council Data Map](https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/map) shows the number of datasets (whether conforming to these standards or not) published by each council around Australia (except South Australia). It is updated hourly,
 but does not automatically detect councils publishing their first dataset.
 
 <iframe width='100%' height='480' frameborder='0'
-src='http://stevage1.cartodb.com/viz/ac41a874-7b34-11e4-ac15-0e4fddd5de28/embed_map'
+src='https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/embed_map'
 allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
 </iframe>
 
