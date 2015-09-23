@@ -17,8 +17,6 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallo
 </iframe>
 
 ### Who
-
-<<<<<<< HEAD
 This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (Melbourne City council) are currently leading the effort.
 
 ### Background
