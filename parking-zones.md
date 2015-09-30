@@ -45,4 +45,4 @@ Field | Description
 `feemode`|`ticket`,`meter`,`android`,`ios`,`web`
 `payment`|Options for physical payments. One or more of: `card`,`coin`,`note`. Do *not* include payment types for smartphone/web payments, which are assumed to support credit card.
 `info_url`|The URL of a webpage with more information about parking in this area.
-`capacity`:The maximum number of vehicles that can be accommodated simultaneously.
+`capacity`|The maximum number of vehicles that can be accommodated simultaneously.
