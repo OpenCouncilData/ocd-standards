@@ -55,6 +55,10 @@ You can help create and refine these standards by:
 
 * participating on the [Open Council Data Google Group](https://groups.google.com/forum/#!forum/opencouncildata)
 * raising and commenting on issues on the [Github issue tracker](https://github.com/OKFNau/open-council-data/issues)
-* joining the fortnightly Skype chat (email Will McIntosh - will.mcintosh@melbourne.vic.gov.au )
+* joining the fortnightly chat:
+   - https://zoom.us/j/231336319 
+   - Or join by phone: +1 646 568 7788 (US Toll) or +1 415 762 9988 (US Toll)
+   - Meeting ID: 231 336 319 
+   - (for help email Will McIntosh - will.mcintosh@melbourne.vic.gov.au )
 * coming to a weekly [Open Knowledge Melbourne meetup](www.meetup.com/Open-Knowledge-Melbourne/)
 * uploading your data to data.gov.au ([get started here]( https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au#Getting_an_account_on_data.gov.au))
