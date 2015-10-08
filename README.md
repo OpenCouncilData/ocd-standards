@@ -22,9 +22,6 @@ This is an open collaboration between councils, Open Knowledge Australia, and ot
 ### Background
 This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Melbourne) are currently leading the effort.
 
-### Background
-This project arose during the course of Steve Bennett's stint as [data guru in residence](http://melbdataguru.tumblr.com). A [basic presentation on these standards](http://tinyurl.com/opendatamav) was given at the MAV (Municipal Association of Victoria) technical forum, December 2014. Will McIntosh from City of Melbourne is now chairing the fortnightly Skype calls.
-
 ### How councils can get started
 * Adopt an Open Data policy
   - Download and adapt a template policy (links to come)
