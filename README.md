@@ -27,7 +27,7 @@ This is an open collaboration between councils, Open Knowledge Australia, and ot
   - Download and adapt a template policy (links to come)
 * [Create a data.gov.au account](https://toolkit.data.gov.au/index.php?title=Starting_on_datagovau#Getting_an_Account)
 * Use tools to automatically extract and upload data
-  - FME workspaces
+  - [FME workspaces](https://github.com/datagovau/ckan-api-examples/tree/master/FME)
   - OGR scripts
 
 ### Principles
