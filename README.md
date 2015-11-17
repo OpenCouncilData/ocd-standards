@@ -24,7 +24,10 @@ This is an open collaboration between councils, Open Knowledge Australia, and ot
 
 ### How councils can get started
 * Adopt an Open Data policy
-  - Download and adapt a template policy (links to come)
+  - Download and adapt a template policy:
+    * [City of Melbourne's Open Data Principles and Program](https://www.melbourne.vic.gov.au/getinvolved/Pages/opendata.aspx) 
+    * [data.gov.au's policy wiki](https://toolkit.data.gov.au/index.php?title=Policy#Policies)
+    * [International Open Data Charter](http://opendatacharter.net/) 
 * [Create a data.gov.au account](https://toolkit.data.gov.au/index.php?title=Starting_on_datagovau#Getting_an_Account)
 * Use tools to automatically extract and upload data
   - FME workspaces
