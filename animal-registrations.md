@@ -13,7 +13,7 @@ It is up to the council to decide whether to include data with privacy considera
 ------|------------
 Format| CSV, also optionally GeoJSON if location data included.
 Dataset name| [Council name] animal registrations
-data.gov.au tag| `animal-registrations`, `opencouncildata`, `ocd-animal-registrations-0.1`
+data.gov.au tag| `animal-registrations`, `opencouncildata`, `ocd-animal-registrations-0.2`
 
 #### Required fields
 
