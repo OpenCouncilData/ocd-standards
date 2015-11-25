@@ -1,4 +1,4 @@
-## Animal registrations 0.1
+## Animal registrations 0.2
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Registrations of animals (usually cats and dogs). 
@@ -41,4 +41,5 @@ Field | Description
 `expiration` | The date on which the registration expires. A date in the past or a blank value, indicates that the animal is currently unregistered.
 `birth_year` | Year the animal was born.
 `tattoo`|Whether the animal has been tattooed, usually in the ear to indicate desexing. `Y` or `N`
+`deceased`|Whether the animal is deceased. `Y` or `N`
 `class`|A council-specific registration classification. This can include terms like `Working dog`, `Pet`, `Pensioner`.
