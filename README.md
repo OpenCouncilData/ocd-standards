@@ -2,13 +2,15 @@
 
 This repository contains lightweight standards for the publishing of council data. The standards have initially been developed by councils in Victoria, Australia, but are open to other councils to use and participate in developing.
 
-**See it online at http://opencouncildata.org (http://okfnau.github.io/open-council-data/)**
+**See it online at http://standards.opencouncildata.org**.
+
+This site is open source, on [Github](http://github.com/OpenCouncilData/open-council-data).
 
 ### Why
 
  To allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
 
-[The Open Council Data Map](https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/map) shows the number of datasets (whether conforming to these standards or not) published by each council around Australia on data.gov.au, data.sa.gov.au, or several Socrata sites. It is updated hourly,
+[The Open Council Data Map](http://maps.opencouncildata.org) shows the number of datasets (whether conforming to these standards or not) published by each council around Australia on data.gov.au, data.sa.gov.au, or several Socrata sites. It is updated hourly,
 but does not automatically detect councils publishing their first dataset.
 
 <iframe width='100%' height='480' frameborder='0'
@@ -17,9 +19,6 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallo
 </iframe>
 
 ### Who
-This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (Melbourne City council) are currently leading the effort.
-
-### Background
 This is an open collaboration between councils, Open Knowledge Australia, and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Melbourne) are currently leading the effort.
 
 ### How councils can get started
@@ -54,7 +53,7 @@ We try to make conforming to the standard as easy as possible.
 You can help create and refine these standards by:
 
 * participating on the [Open Council Data Google Group](https://groups.google.com/forum/#!forum/opencouncildata)
-* raising and commenting on issues on the [Github issue tracker](https://github.com/OKFNau/open-council-data/issues)
-* joining the fortnightly Skype chat (email Will McIntosh - will.mcintosh@melbourne.vic.gov.au )
+* raising and commenting on issues on the [Github issue tracker](https://github.com/OpenCouncilData/open-council-data/issues)
+* joining the fortnightly Skype chat ([email Will McIntosh](mailto:will.mcintosh@melbourne.vic.gov.au))
 * coming to a weekly [Open Knowledge Melbourne meetup](www.meetup.com/Open-Knowledge-Melbourne/)
-* uploading your data to data.gov.au ([get started here]( https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au#Getting_an_account_on_data.gov.au))
+* uploading your data to data.gov.au ([get started here](https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au#Getting_an_account_on_data.gov.au))
