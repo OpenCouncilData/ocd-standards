@@ -1,4 +1,4 @@
-# Open Council Data
+# Open Council Data Standards
 
 This repository contains lightweight standards for the publishing of council data. The standards have initially been developed by councils in Victoria, Australia, but are open to other councils to use and participate in developing.
 
