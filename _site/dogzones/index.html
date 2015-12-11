@@ -1,0 +1,122 @@
+<h2 id="dog-walking-zones-0-1">Dog walking zones 0.1</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Dog walking zones are regions within which dog walking is permitted off-leash, on-leash, or not at all. Councils are encouraged to provide comprehensive information on where dog walking is allowed or restricted, including other sources of regulations such as state or national parks.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>GeoJSON (preferred) in EPSG:4326; zipped shapefile</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Dog Walking Zones</td>
+</tr>
+<tr>
+<td>data.gov.au tags</td>
+<td><code>dog-walking</code>, <code>opencouncildata</code>, <code>ocd-dogzones-0.1</code></td>
+</tr>
+</tbody></table>
+
+<p>Polygon areas should not overlap, with the single exception of the <code>Default</code> polygon described under <code>name</code>.</p>
+
+<h4 id="required-fields">Required fields|</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>The default dog-walking status for this area, one of: <code>offleash</code>, <code>onleash</code>, <code>no</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>A short name used by your council to identify a zone, such as &quot;Fido Beach&quot;. If the special name <code>Default</code> is used, this is taken to describe general default regulations for public areas throughout the council area, and should be on a polygon covering the whole LGA boundary.</td>
+</tr>
+<tr>
+<td><code>regulation</code></td>
+<td>free text field describing the source of the regulation in force. For example, <code>Council</code> or <code>State park regulations</code></td>
+</tr>
+<tr>
+<td><code>comment</code></td>
+<td>Free text field that could include more specific restrictions (eg, no dogs within 20 metres of playgrounds), information on dog waste management, etc.</td>
+</tr>
+<tr>
+<td><code>off_rules</code></td>
+<td>Free text field with specific rules about off-leash dog walking (eg, effective voice control required).</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>url</code></td>
+<td>URL pointing to more information about dog walking in this area.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>internal council reference number, if any.</td>
+</tr>
+<tr>
+<td><code>on_rules</code></td>
+<td>Free text field with specific rules about on-leash dog walking.</td>
+</tr>
+<tr>
+<td><code>no_rules</code></td>
+<td>Free text field with specific rules about dog-prohibited areas.</td>
+</tr>
+<tr>
+<td><code>status_1</code></td>
+<td>a different status restriction (as above) that applies during a limited set of dates and/or hours. Outside those dates/hours, <code>status</code> applies. Either <code>dates_1</code>, or <code>hours_1</code>, or both, must be provided.</td>
+</tr>
+<tr>
+<td><code>dates_1</code></td>
+<td>Comma-separated, slashed pairs of dates definining ranges during which this status applies (eg, <code>2015-12-01/2016-01-28,2016-04-03/2016-04-13</code>)</td>
+</tr>
+<tr>
+<td><code>hours_1</code></td>
+<td>Hyphenated range of 0-padded 24-hour times defining time range during which this status applies (eg, <code>18:00-08:30</code>). (Comma-separated ranges allowed if necessary.)</td>
+</tr>
+<tr>
+<td><code>status_2</code>,<code>dates_2</code>,<code>hours_2</code></td>
+<td>An additional status that overrides <code>status_1</code> in complex situations.</td>
+</tr>
+</tbody></table>
+
+<p>For example, these restrictions: <em>&quot;Off-leash permitted from 1 December until 28 February and during the Victorian Easter school holidays each year between the hours of 6.00pm and 9.00am. At all other times during this period dogs are permitted on-leash in this area. Outside of these dates dogs are permitted off-leash at all time&quot;</em></p>
+
+<p>This would be implemented as:</p>
+
+<ul>
+<li><code>status</code>:<code>offleash</code></li>
+<li><code>status_1</code>: <code>onleash</code></li>
+<li><code>dates_1</code>: <code>2015-12-01/2016-02-28,2016-03-25/2016-04-11</code></li>
+<li><code>hours_1</code>: <code>18:00-09:00</code></li>
+</ul>

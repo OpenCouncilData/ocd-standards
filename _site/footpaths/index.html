@@ -1,0 +1,69 @@
+<h2 id="footpaths-0-2">Footpaths 0.2</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Footpaths known about or maintained by the council.</p>
+
+<h4 id="general-recommendations">General recommendations</h4>
+
+<ul>
+<li>Format: Polyline geospatial data. GeoJSON (preferred), Shapefile</li>
+<li>Dataset name: [Council name] council footpaths</li>
+<li>data.gov.au tag: <code>footpaths</code>, <code>opencouncildata</code>, <code>ocd-footpaths-0.2</code></li>
+</ul>
+
+<h4 id="required-fields">Required fields</h4>
+
+<p>(None)</p>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>paved</code></td>
+<td>Is the surface a hard material such as asphalt, concrete or slate? <code>yes</code> or <code>no</code>.</td>
+</tr>
+<tr>
+<td><code>surf</code></td>
+<td>The main construction material used to create the footpath. Use one of the following values where possible: <br/><code>Asphalt</code>, <code>Concrete</code>, <code>Brick</code> (including slate, cobbles, setts), <code>Gravel</code> (including all graded, unsealed surfaces such as crushed limestone and chert), <code>Sand</code>, <code>Natural</code> (earth, grass, rocks), <code>Boardwalk</code> (including wooden and synthetic bridge decks) , <code>Sprayseal</code>.</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>The width in meters of the footpath. E.g. <code>1.8</code></td>
+</tr>
+<tr>
+<td><code>wheelchair</code></td>
+<td>Accessibility for wheelchair users. <code>yes</code> (no steps, suitable for unassisted use), <code>assisted</code> (occasional small steps navigable with assistance), <code>no</code> (significant obstacles such as steps, bollards or a steep gradient)</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>surf_desc</code></td>
+<td>A free-text description of the surface and condition. E.g. &quot;Gravel path with steps and erosion control channels.&quot;</td>
+</tr>
+<tr>
+<td><code>operator</code></td>
+<td>The name of the council or other organisation (eg VicRoads) maintaining this footpath.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>Council specific reference id for the footpath segment.</td>
+</tr>
+<tr>
+<td><code>bicycle</code></td>
+<td>Are bicycles allowed on this footpath? (Designated bike paths should be provided in a separate &quot;bike paths&quot; dataset.) One of: <code>allowed</code> (bicycles are allowed, as in most parks), <code>no</code> (bicycles are forbidden)</td>
+</tr>
+</tbody></table>

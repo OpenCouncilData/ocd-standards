@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<head>
+  <title>Open Council Data Standards</title>
+  <meta charset='utf-8'/>
+  <meta name='description' content='Documentation website'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'/>
+  <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='assets.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>  
+  <nav id='sidebar'>
+	<!-- <h1>Open Council Data Standards</h1> -->
+<ul id='links'>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <li><h2>services</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/toilets'>Toilets</a></li>
+              
+        <li class=''><a href='#/customer_service_centres'>Customer service centres</a></li>
+              
+        <li class=''><a href='#/childcare_centres'>Childcare centres</a></li>
+              
+        <li class=''><a href='#/animal-registrations'>Animal registrations</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>misc</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/3d-buildings'>3D buildings</a></li>
+              
+        <li class=''><a href='#/trees'>Trees</a></li>
+              
+        <li class=''><a href='#/building-accessibility'>Building accessibility ratings</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>boundaries</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/wards'>Wards</a></li>
+              
+        <li class=''><a href='#/parkingzones'>Parking zones</a></li>
+              
+        <li class=''><a href='#/garbage-collection-zones'>Garbage collection zones</a></li>
+              
+        <li class=''><a href='#/dogzones'>Dog walking zones</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>infrastructure</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/footpaths'>Footpaths</a></li>
+              
+        <li class=''><a href='#/drainpipes'>Drainpipes</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>time-sensitive</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class=''><a href='#/road-closures'>Road closures</a></li>
+              
+        <li class=''><a href='#/events'>Events</a></li>
+      
+    
+    </ul>
+  </li>
+
+</ul>
+</nav>
+
+<div id="banner">
+<h1>Open Council Data Standards</h1>
+<p class="tagline">Supported by MAV Technology and Open Knowledge Australia.</p>
+<ul id="ocd-links">
+<li><a href="http://opencouncildata.org">Learn</a></li>
+<li><a href="http://opencouncildata.org">Get started</a></li>
+<li><a href="http://opencouncildata.org">Toolkit</a></li>
+<li><a href="http://opencouncildata.org">Stay connected</a></li>
+<li><a href="http://opencouncildata.org">About</a></li>
+</ul>
+</div>
+
+
+
+<section id='content'>
+
+
+<p>This <a href="http://github.com/OpenCouncilData/open-council-data">Github repository</a> contains lightweight standards for Australian councils publishing open data.</p>
+
+<h3 id="why">Why</h3>
+
+<p>To allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.</p>
+
+<p>See the number of datasets already published by councils on the <a href="http://maps.opencouncildata.org">Open Council Data Map</a>.</p>
+
+<!-- <iframe width='100%' height='480' frameborder='0'
+src='https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/embed_map'
+allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+</iframe>
+ -->
+
+<h3 id="who">Who</h3>
+
+<p>This is an open collaboration between councils, Open Knowledge Australia, MAV Technology, the Local Government Spatial Reference Group and other interested participants. <a href="http://stevebennett.me">Steve Bennett</a> (Open Knowledge) and Will McIntosh (City of Melbourne) chair the group.</p>
+
+<h3 id="principles">Principles</h3>
+
+<p>We try to make conforming to the standard as easy as possible.</p>
+
+<ol>
+<li>As few required fields as possible.</li>
+<li>These are interoperability standards are for <strong>transforming</strong> already-collected data only.</li>
+<li>Match common field names as much as possible.</li>
+<li>Field names must be 10 characters or fewer, due to Shapefile attribute limitations.</li>
+</ol>
+
+<h3 id="general-guidelines">General guidelines</h3>
+
+<ul>
+<li>All date fields should be provided as YYYY-MM-DD</li>
+<li>Additional fields can (and should) be provided, but should be included after recommended fields.</li>
+<li>Numeric values should be provided as a single numeric value (&quot;1.3&quot;). Don&#39;t include a range (&quot;1.2 - 1.4&quot;), nor units (&quot;1.3m&quot;).</li>
+<li>Spatial data should presented as raw latitude/longitude (<a href="http://spatialreference.org/ref/epsg/wgs-84/">EPSG:4326</a>), not eastings and northings (projected coordinates).</li>
+<li>Spatial data should be provided in <a href="https://github.com/NICTA/nationalmap/wiki/csv-geo-au">CSV-geo-au format</a> if point data, and also <a href="http://geojson.org/geojson-spec.html">GeoJSON</a>.</li>
+<li>Unknown information should be indicated as:
+
+<ul>
+<li>CSV: empty value (two consecutive commas)</li>
+<li>GeoJSON: no attribute (preferred), or &quot;&quot;</li>
+<li>Shapefile: no attribute (preferred), or &quot;&quot;</li>
+</ul></li>
+</ul>
+
+<h3 id="participate">Participate</h3>
+
+<p>You can help create and refine these standards by:</p>
+
+<ul>
+<li>participating on the <a href="https://groups.google.com/forum/#!forum/opencouncildata">Open Council Data Google Group</a></li>
+<li>raising and commenting on issues on the <a href="https://github.com/OpenCouncilData/open-council-data/issues">Github issue tracker</a></li>
+<li>joining the fortnightly Skype chat (<a href="mailto:will.mcintosh@melbourne.vic.gov.au">email Will McIntosh</a>)</li>
+<li>coming to a weekly <a href="www.meetup.com/Open-Knowledge-Melbourne/">Open Knowledge Melbourne meetup</a></li>
+<li>uploading your data to data.gov.au (<a href="http://opencouncildata.org">get started here</a>)</li>
+</ul>
+
+
+
+
+  <article class=''>
+    <a name='/3d-buildings' href='#/3d-buildings'><h2>3D buildings</h2></a>
+    <section class='body'>
+      <h2 id="3d-buildings-0-2">3D buildings 0.2</h2>
+
+<p>A 3D model (not just outline plus height) of buildings and other physical features, used for planning, architecture and communicating proposed construction. Model files should be textured if possible.</p>
+
+<p>A collection of 3D model files should be bundled with a point origin file, to correctly locate each 3D model file in real-world coordinates.</p>
+
+<p><code>origins.csv</code> (1 file)| one row per model, with latitude and longitude of the origin of that file
+<code>(modelname).3ds</code> (1+ files)| one file per model. Each model must be oriented with north (increasing latitude) along the positive <code>Y</code> axis, and east (increasing longitude) along the positive <code>X</code> axis. </p>
+
+<p>In the fields below, &quot;council ID&quot; means the text string identifying the council, given by the part of the council&#39;s website before &quot;.vic.gov.au&quot;. Hence, &quot;melbourne&quot;, &quot;geelong&quot;, &quot;corangamite&quot; etc.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>Autodesk 3DS. (It has many limitations but is widely used and understood.) CityGML is another emerging possibility.</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] 3D Buildings</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>opencouncildata-3d-buildings-0.2</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields-for-origins-csv">Required fields for origins.csv</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>filename</code></td>
+<td>filename of the model referred to. <em>For example: buildings.3ds</em></td>
+</tr>
+<tr>
+<td><code>lat</code></td>
+<td>latitude of the origin (Y value 0), in decimal degrees. <em>For example: -37.5</em></td>
+</tr>
+<tr>
+<td><code>lon</code></td>
+<td>longitude of the origin (X value 0), in decimal degrees. <em>For example: 144.5</em></td>
+</tr>
+<tr>
+<td><code>elevation</code></td>
+<td>elevation of the origin (Z value 0) relative to sea level, in metres.</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>status of the physical building. One of: <code>proposed</code> (in the planning process, work not yet begun), <code>construction</code>, <code>built</code> (finished), <code>demolished</code> (demolition has commenced). If not provided, <code>built</code> is assumed.</td>
+</tr>
+<tr>
+<td><code>desc</code></td>
+<td>text description of the building.</td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td>date of most recent update to this model file, in ISO 8601 format.</td>
+</tr>
+<tr>
+<td><code>date_built</code></td>
+<td>date of expected or actual finishing of construction, in ISO 8601 format. <em>For example: 2012-12-11</em></td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>council-specific identifier for the model.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>src</code></td>
+<td>source of the model as a whole. One of: <code>AAM</code> (AAM Group), council ID, <code>architect</code> (provided by any architecture firm), or other value as appropriate.</td>
+</tr>
+<tr>
+<td><code>textur_src</code></td>
+<td>source of texture imagery. One of: <code>Pictometry</code>, <code>Earthmine</code>, <code>Graphical</code>, <code>None</code>, or other value if appropriate.</td>
+</tr>
+<tr>
+<td><code>geom_src</code></td>
+<td>source of geometry. One of: <code>Pictometry</code> (provided by Pictometry), <code>architect</code> (provided by any architecture firm), council ID (created by the council, such as the GIS team), or other value as appropriate.</td>
+</tr>
+<tr>
+<td><code>date_demol</code></td>
+<td>date of expected or actual demolition, in ISO 8601 format, or blank if none.</td>
+</tr>
+<tr>
+<td><code>file_url</code></td>
+<td>URL where model file can be downloaded. This should be a direct download link, not a landing page.</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>height of building in metres. <em>For example: 44.5</em></td>
+</tr>
+<tr>
+<td><code>material</code></td>
+<td>primary external building material, one of: <code>brick</code>, <code>wood</code>, <code>glass</code>, <code>concrete</code> or other value as appropriate.</td>
+</tr>
+<tr>
+<td><code>footprint</code></td>
+<td>council-specific ID of building footprint separately maintained by the council.</td>
+</tr>
+<tr>
+<td><code>bldg_id</code></td>
+<td>council-specific ID for the building itself.</td>
+</tr>
+<tr>
+<td><code>prop_id</code></td>
+<td>council-specific ID for the property housing the building.</td>
+</tr>
+<tr>
+<td><code>plan_id</code></td>
+<td>planning application ID.</td>
+</tr>
+<tr>
+<td><code>plan_auth</code></td>
+<td>planning body in which the <code>plan_id</code> applies.</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>version of the model, in council-specific format.</td>
+</tr>
+<tr>
+<td><code>suburb</code></td>
+<td>name of suburb building is within.</td>
+</tr>
+</tbody></table>
+
+<h4 id="fields-under-discussion">Fields under discussion</h4>
+
+<ul>
+<li><code>isPrimary</code></li>
+<li><code>renderType</code>: <code>textured</code>, <code>color_layers</code></li>
+<li><code>IsWFinding</code>: <code>Yes</code>, <code>No</code></li>
+<li><code>ModelNorth</code>: <code>WGS84</code>, <code>Normal</code></li>
+<li><code>Position</code>: <code>XYZ</code>, <code>Minimum Z</code>, <code>Normal</code></li>
+<li><code>IsLOD</code>: <code>Yes</code>, <code>No</code></li>
+<li><code>PlansDMRef</code></li>
+<li><code>Easting</code></li>
+<li><code>Northing</code></li>
+</ul>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/wards' href='#/wards'><h2>Wards</h2></a>
+    <section class='body'>
+      <h2 id="wards-0-1">Wards 0.1</h2>
+
+<p>Some councils are divided into areas called &quot;wards&quot;, particularly for elections.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<ul>
+<li>Format: Polygon geospatial data. GeoJSON (preferred), Shapefile</li>
+<li>Dataset name: [Council name] council wards</li>
+<li>data.gov.au tag: <code>opencouncildata-wards-0.1</code></li>
+</ul>
+
+<h4 id="required-fields">Required fields</h4>
+
+<ul>
+<li><code>name</code>: Name of the ward, eg &quot;Buckley&quot;.</li>
+</ul>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<ul>
+<li><code>councillor</code>: The name of the councillor that currently represents the region.</li>
+<li><code>portfolio</code>: The portfolio held by the councillor, if any.</li>
+<li><code>lga</code>: The name of the council which this ward belongs to.</li>
+</ul>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/trees' href='#/trees'><h2>Trees</h2></a>
+    <section class='body'>
+      <h2 id="trees-1-3">Trees 1.3</h2>
+
+<p>Trees registers contain locations and information about individual trees within the council boundaries. They usually include &quot;street trees&quot;, sometimes &quot;park trees&quot;, but rarely trees on private property or in bushland. Reasons for collecting the data including planning future growth or maintenance of canopy cover, and managing risk of falling branches.</p>
+
+<p><a href="http://opentrees.org">OpenTrees.org</a> shows council tree inventories already published:</p>
+
+<!-- <iframe src="http://opentrees.org?embed" style="height: 600px; width: 800px;"></iframe> -->
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>CSV (preferred), Shapefile, GeoJSON</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Street and Park Trees</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>trees</code>, <code>opencouncildata</code>, <code>ocd-trees-1.3</code></td>
+</tr>
+</tbody></table>
+
+<p>When information is available only as a range (eg, diameter is recorded as 100-150cm), the middle of the range should be presented as the field name, with an additional <code>_min</code> and <code>_max</code>. For example, <code>dbh</code>: 125, <code>dbh_min</code>: 100, <code>dbh_max</code>, 150. </p>
+
+<p>If the information is only available as an unbounded range (eg, height greater than 5 metres), then do the same with no <code>_max</code>. For example, <code>height</code>: 5, <code>height_min</code>: 5.</p>
+
+<h4 id="required-fields">Required fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>genus</code></td>
+<td>Botanical genus, in title case. eg: <code>Eucalyptus</code></td>
+</tr>
+<tr>
+<td><code>species</code></td>
+<td>Botanical genus, in title case. Leave blank if not known (not &quot;Sp.&quot;). eg: <code>Regnans</code></td>
+</tr>
+<tr>
+<td><code>dbh</code></td>
+<td>Diameter at breast height (130cm above ground), in centimetres. eg: <code>60</code>. (See <em>General recommendations</em> for ranges.)</td>
+</tr>
+<tr>
+<td><code>year_min</code></td>
+<td>Lower bound on year that tree is expected to live to. (That is, a tree surveyed in 2008 with useful life expectancy range of 10-15 years would be <code>2018</code>).</td>
+</tr>
+<tr>
+<td><code>year_max</code></td>
+<td>Upper bound on year that tree is expected to live to. (<code>2023</code> in this example)</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>crown</code></td>
+<td>Width in metres of the tree&#39;s foliage (also known as crown spread). eg: <code>6</code> (See <em>General recommendations</em> for ranges.)</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>Height in metres. eg: <code>4</code>. (See <em>General recommendations</em> for ranges.)</td>
+</tr>
+<tr>
+<td><code>common</code></td>
+<td>Common name for species (non-standardised), in title case. eg: <code>Myrtle Beech</code></td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>Where the tree is located: <code>park</code>, <code>street</code>, <code>council</code></td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>Council-specific identifier, enabling joining to other datasets. eg <code>9128</code></td>
+</tr>
+<tr>
+<td><code>maintenance</code></td>
+<td>number of months, how often the tree is inspected. eg <code>24</code></td>
+</tr>
+<tr>
+<td><code>maturity</code></td>
+<td>one of <code>young</code>, <code>semi-mature</code>, <code>mature</code>, <code>over-mature</code></td>
+</tr>
+<tr>
+<td><code>planted</code></td>
+<td>date of planting, in ISO8601. eg <code>1998-04-02</code></td>
+</tr>
+<tr>
+<td><code>updated</code></td>
+<td>date of addition to database or most recent revision, in ISO8601. eg <code>2012-06-08</code></td>
+</tr>
+<tr>
+<td><code>health</code></td>
+<td>Health of tree growth: one of <code>stump</code>, <code>dead</code>, <code>poor</code>,<code>fair</code>,<code>good</code></td>
+</tr>
+<tr>
+<td><code>structure</code></td>
+<td>Solidity of tree, unlikelihood of falling. One of <code>failed</code>, <code>poor</code>, <code>fair</code>, <code>good</code></td>
+</tr>
+<tr>
+<td><code>variety</code></td>
+<td>Any part of the scientific name below species level, including subspecies or variety.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Other information about the tree that is not its scientific name or species.</td>
+</tr>
+<tr>
+<td><code>family</code></td>
+<td>Botanical family.</td>
+</tr>
+<tr>
+<td><code>dbh_min</code>, <code>dbh_max</code>, <code>height_min</code>, <code>height_max</code>, <code>crown_min</code>, <code>crown_max</code></td>
+<td>See <em>General recommendations</em>.</td>
+</tr>
+<tr>
+<td><code>ule_min</code>, <code>ule_max</code></td>
+<td>Lower and upper bound on useful life expectancy, when surveyed, in years. eg: <code>15</code>. <em>See also <code>year_max</code>,<code>year_min</code></em></td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>Street address.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/toilets' href='#/toilets'><h2>Toilets</h2></a>
+    <section class='body'>
+      <h2 id="toilets-1-2">Toilets 1.2</h2>
+
+<p>Public toilets known about or operated by the council.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>CSV (preferred), GeoJSON, Shapefile,</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Public Toilets</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>toilets</code>, <code>opencouncildata</code>, <code>ocd-toilets-1.2</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees of building centroid or entrance. (EPSG:4326)</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>A description that may help identify the facility (eg, &quot;Smith Reserve Playground&quot;)</td>
+</tr>
+<tr>
+<td><code>female</code></td>
+<td>Whether toilets for women are available (<code>yes</code>,<code>no</code>). (Tag unisex toilets as <code>yes</code>)</td>
+</tr>
+<tr>
+<td><code>male</code></td>
+<td>Whether toilets for men are available (<code>yes</code>, <code>no</code>). (Tag unisex toilets as <code>yes</code>)</td>
+</tr>
+<tr>
+<td><code>wheelchair</code></td>
+<td>Whether toilets accessible by wheelchair users are available. (<code>yes</code>, <code>no</code>)</td>
+</tr>
+<tr>
+<td><code>trsfr_side</code></td>
+<td>What side the transfer hand rail is located for the toilet to assist with getting up/down. (<code>left</code>, <code>right</code>)</td>
+</tr>
+<tr>
+<td><code>week_open</code></td>
+<td>What time the toilets open on weekdays, in 0-padded 24 hour time. <code>00:00</code> for always open/closed.</td>
+</tr>
+<tr>
+<td><code>week_close</code></td>
+<td>What time the toilets close on weekdays, in 0-padded 24 hour time. <code>24:00</code> for always open, <code>00:00</code> for always closed.</td>
+</tr>
+<tr>
+<td><code>sat_open</code></td>
+<td>As above for Saturdays.</td>
+</tr>
+<tr>
+<td><code>sat_close</code></td>
+<td>As above for Saturdays.</td>
+</tr>
+<tr>
+<td><code>sun_open</code></td>
+<td>As above for Sundays.</td>
+</tr>
+<tr>
+<td><code>sun_close</code></td>
+<td>As above for Sundays.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>comment</code></td>
+<td>Any additional comments, such as for opening hours that can&#39;t be represented in the above scheme.</td>
+</tr>
+<tr>
+<td><code>access_cmt</code></td>
+<td>Additional comments about accessibility, such as if the toilets are inside a building that is difficult to access.</td>
+</tr>
+<tr>
+<td><code>needle_bin</code></td>
+<td>Whether a syringe disposal bin is present (<code>yes</code>/<code>no</code>).</td>
+</tr>
+<tr>
+<td><code>operator</code></td>
+<td>The name of the organisation managing the toilet (eg, your council name, or a business name.)</td>
+</tr>
+<tr>
+<td><code>drink_tap</code></td>
+<td>Whether water for drinking is available (<code>yes</code>/<code>no</code>)</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/road-closures' href='#/road-closures'><h2>Road closures</h2></a>
+    <section class='body'>
+      <h2 id="road-closures-0-2">Road closures 0.2</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Locations of planned and unplanned road closures due to events, maintenance, natural events or other reasons. For maximum usefulness, this dataset should be updated whenever new information is available (perhaps hourly). Past closures should be removed from the dataset within a short period (eg, 1 day) in order to keep the whole dataset size manageable.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>GeoJSON in EPSG:4326</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Road Closures</td>
+</tr>
+<tr>
+<td>data.gov.au tags</td>
+<td><code>road-closures</code>, <code>opencouncildata</code>, <code>ocd-roadclosures-0.2</code></td>
+</tr>
+<tr>
+<td>Spatial type</td>
+<td>Line data is preferred (representing each segment of road that is affected), but points (general location of closure) and polygon (region in which all roads are closed) are acceptable.</td>
+</tr>
+</tbody></table>
+
+<p>If possible, sort the data with most imminent closures first.</p>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>The level of impact: <code>closed</code> (no movement), <code>restricted</code> (speed restrictions and possible lane closures), <code>open</code> (open, included if necessary to avoid doubt), <code>detour</code> (this line feature is a recommended detour around another closure)</td>
+</tr>
+<tr>
+<td><code>start_date</code></td>
+<td>Date of start of closure, in ISO8601 format: <code>2015-06-04</code></td>
+</tr>
+<tr>
+<td><code>start_time</code></td>
+<td>Time of start of closure, in ISO8601 local timezone format: <code>08:30+10</code> (preferred) or no timezone format: <code>08:30</code>. For an unplanned closure without an exact known start date, use any time in the past. <em>Do not use UTC format</em></td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>end_date</code>, <code>end_time</code></td>
+<td>As for <code>start_date</code>, <code>start_time</code> for the anticipated end of the closure, if known.</td>
+</tr>
+<tr>
+<td><code>reason</code></td>
+<td>One of: <code>Works</code> (including road works, building construction, water mains), <code>Event</code>, <code>Unplanned</code> (e.g. emergency maintenance), <code>Crash</code>, <code>Natural</code> (fire, flood, weather)</td>
+</tr>
+<tr>
+<td><code>reason_desc</code></td>
+<td>Free text description of the reason for the closure or restriction.</td>
+</tr>
+<tr>
+<td><code>status_desc</code></td>
+<td>Free text description of the extent of the closure or restriction.</td>
+</tr>
+</tbody></table>
+
+<p><code>direction</code>: Direction in which traffic is affected. One of <code>Both</code>, <code>Inbound</code>,<code>Outbound</code>,<code>North</code>,<code>South</code>,<code>West</code>,<code>East</code>, etc.
+<code>updated</code>: The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, <code>2015-06-04T08:15+10</code>)</p>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>source</code></td>
+<td>The source of the closure, eg <code>Victoria Police</code>, <code>Western Energy</code></td>
+</tr>
+<tr>
+<td><code>delay_mins</code></td>
+<td>The number of minutes delay anticipated for motorists proceeding through an affected area. Can be either a single number <code>15</code> or a range <code>5-10</code>.</td>
+</tr>
+<tr>
+<td><code>impact</code></td>
+<td>The level of impact this is expected to have on traffic flows in the area, from <code>1</code> (minimal) to <code>5</code> (severe). This is intended to aid in filtering data for mapping.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>A council-specific identifier.</td>
+</tr>
+<tr>
+<td><code>event_id</code></td>
+<td>A council-specific identifier for an associated event, if any.</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>A website link for more information.</td>
+</tr>
+<tr>
+<td><code>phone</code></td>
+<td>A phone number to call for more information.</td>
+</tr>
+<tr>
+<td><code>daily_start</code>, <code>daily_end</code></td>
+<td>For works across multiple days, the time at which closure begins and ends each day, in ISO8601 local timezone (preferred) or no timezone format.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/parkingzones' href='#/parkingzones'><h2>Parking zones</h2></a>
+    <section class='body'>
+      <h2 id="parking-zones-0-2">Parking zones 0.2</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Areas in which parking is regulated, including on-street metered and unmetered parking, no-parking zones and car parks.</p>
+
+<p>Councils are encouraged to include parking zones provided by private operators, for maximum utility.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>GeoJSON in EPSG:4326</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Parking Zones</td>
+</tr>
+<tr>
+<td>data.gov.au tags</td>
+<td><code>parking-zones</code>, <code>opencouncildata</code>, <code>ocd-parking-zones-0.2</code></td>
+</tr>
+<tr>
+<td>Spatial type</td>
+<td>Polygon. Each polygon represents one area within which restrictions are identical. For parking on both sides of a street, two separate polygons should be used.</td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<ul>
+<li><code>mode</code>: see description in <em>Time-dependent restrictions</em></li>
+</ul>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>updated</code></td>
+<td>The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, <code>2015-06-04T08:15+10</code>)</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>The council&#39;s identifier for the parking zone.</td>
+</tr>
+</tbody></table>
+
+<h3 id="time-dependent-restrictions">Time-dependent restrictions</h3>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>start</code>, <code>end</code></td>
+<td>Time at which this parking restriction commences/ends, in 24 hour time. Times outside this range are assumed to be free, unless additional restrictions given.<br/><em>For example: 17:30</em></td>
+</tr>
+<tr>
+<td><code>days</code></td>
+<td>Semicolon-delimited list of days on which this restriction applies.  If times are different on different days, create a separate set of restrictions for the other days as explained below.<br/><em>For example: <code>Friday;Saturday;Sunday</code>.</em></td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td>Semicolon-delimited list of one or more of: <code>free</code>,<code>fee</code>,<code>loading zone</code>,<code>no standing</code>,<code>no parking</code>,<code>clearway</code>, <code>disabled</code></td>
+</tr>
+<tr>
+<td><code>minsmax</code></td>
+<td>Maximum stay in minutes. For modes that imply no parking (eg, <code>no standing</code>), do not include this field, or with value <code>0</code> if necessary. To express the absence of a maximum stay, include this field with value <code>-1</code><br/><em>For example: 120</em></td>
+</tr>
+<tr>
+<td><code>hourlyfee</code></td>
+<td>Cost in dollars per hour for the first hour of parking. If paying for one hour is not possible (eg, maximum stay is 30 minutes at $2.20), still convert it to an hourly rate (eg, <code>4.40</code>).</td>
+</tr>
+<tr>
+<td><code>onlyfor</code></td>
+<td>If parking is restricted to a certain type of vehicle, provide a semicolon-delimited list of: <code>motorcycle</code>,<code>bus</code>,etc.</td>
+</tr>
+<tr>
+<td><code>notfor</code></td>
+<td>If parking is prohibited for certain types of vehicle, provide a semicolon-delimited list of: <code>caravan</code>, etc.</td>
+</tr>
+<tr>
+<td><code>start2</code>, <code>end2</code>, <code>mode2</code>, <code>hourlyfee2</code>, etc.</td>
+<td>When different times of day have different restrictions, specify them with additional columns ending in <code>2</code>,<code>3</code> etc.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>operator</code></td>
+<td>The organisation that manages this parking zone. eg <code>Melbourne</code>, <code>VicRoads</code>, <code>Interpark</code>.</td>
+</tr>
+<tr>
+<td><code>sensor</code></td>
+<td>Whether an electronic sensor detects overstays. <code>yes</code>/<code>no</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>One of <code>street</code> (on-street parking), <code>carpark</code></td>
+</tr>
+<tr>
+<td><code>feemode</code></td>
+<td><code>ticket</code>,<code>meter</code>,<code>android</code>,<code>ios</code>,<code>web</code></td>
+</tr>
+<tr>
+<td><code>payment</code></td>
+<td>Options for physical payments. One or more of: <code>card</code>,<code>coin</code>,<code>note</code>. Do <em>not</em> include payment types for smartphone/web payments, which are assumed to support credit card.</td>
+</tr>
+<tr>
+<td><code>info_url</code></td>
+<td>The URL of a webpage with more information about parking in this area.</td>
+</tr>
+<tr>
+<td><code>capacity</code></td>
+<td>The maximum number of vehicles that can be accommodated simultaneously.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/garbage-collection-zones' href='#/garbage-collection-zones'><h2>Garbage collection zones</h2></a>
+    <section class='body'>
+      <h2 id="garbage-collection-zones-2-2">Garbage collection zones 2.2</h2>
+
+<p>Zones are physical regions within which residential garbage collection of a given type (waste for landfill, recycling, green waste) are collected on the same day.</p>
+
+<p>Zones that share the same boundaries should be provided as a single polygon with multiple sets of tags (<code>rub_day</code>, <code>grn_day</code> etc).</p>
+
+<p><a href="http://openbinmap.org">OpenBinMap.org</a> shows garbage collection zones already published:</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>GeoJSON (preferred) in EPSG:4326, Zipped shapefile</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Garbage Collection Zones</td>
+</tr>
+<tr>
+<td>data.gov.au tags</td>
+<td><code>waste-collection</code>, <code>ocd-garbage</code>, <code>ocd-garbage-2.1</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields:</h4>
+
+<p>At least one of the following fields should have a value. If multiple collection types share a zone, publish a single polygon with values in several columns. For example, in one area, rubbish is collected on Tuesdays, and recycling is every second Thursday. If the zones are different (even if overlapping), publish multiple polygons.*</p>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>rub_day</code></td>
+<td>Day of the week when rubbish is collected.</td>
+<td><code>monday</code></td>
+</tr>
+<tr>
+<td><code>rub_weeks</code></td>
+<td>Number of weeks between rubbish collections. Leave blank for one-off or irregular collections.</td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>rub_start</code></td>
+<td>Date of one rubbish collection, to calculate future collection dates from, in ISO 8601.</td>
+<td><code>2015-04-01</code></td>
+</tr>
+<tr>
+<td><code>rub_dates</code></td>
+<td>(optional) Comma-separated list of dates of future collections. Use this for irregular collections, or in addition to other fields to facilitate data use.</td>
+<td><code>2015-04-01,2015-04-08,2015-04-15,2015-04-22</code></td>
+</tr>
+<tr>
+<td><code>rec_day</code>, <code>rec_weeks</code>, <code>rec_start</code>, <code>rec_dates</code></td>
+<td>Schedule for recycling collection, as above.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>grn_day</code>, <code>grn_weeks</code>, <code>grn_start</code>, <code>grn_dates</code></td>
+<td>Schedule for green waste collection, as above.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>hw_day</code>, <code>hw_weeks</code>, <code>hw_start</code>, <code>hw_dates</code></td>
+<td>Schedule for hard waste collection, as above.</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>a short name used by your council to identify a zone</td>
+<td>&quot;Monday Area 2&quot;</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>desc</code></td>
+<td>A free text field.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>rub_name</code>, <code>rec_name</code>, <code>grn_name</code>, <code>hw_name</code></td>
+<td>A short name describing the physical bin used for that collection</td>
+<td><code>Landfill bin (red lid)</code></td>
+</tr>
+<tr>
+<td><code>rub_desc</code>, <code>rec_desc</code>, <code>grn_desc</code>, <code>hw_desc</code></td>
+<td>free text field with specific comments about rules for acceptable rubbish collection.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>rub_url</code>, <code>rec_url</code>, <code>grn_url</code>, <code>hw_url</code></td>
+<td>URL pointing to a page with more information specifically about each collection. If there is no page specifically about a type, leave it blank and use the <code>info_url</code> field.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>rub_scope</code>, <code>rec_scope</code>, <code>grn_scope</code>, <code>hw_scope</code></td>
+<td>one of:<br/> <code>all</code> (all residents receive this service)<br/> <code>optional</code> (residents need to sign up to the service),<br/> <code>booked</code> (residents sign up for individual collection dates)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>rub_ok</code>, <code>rec_ok</code>, <code>grn_ok</code>, <code>hw_ok</code></td>
+<td>semi-colon separated list of things that can be included in this collection type.</td>
+<td><code>Plastic bottles; tin cans</code></td>
+</tr>
+<tr>
+<td><code>rub_notok</code>, <code>rec_notok</code>, <code>grn_notok</code>, <code>hw_notok</code></td>
+<td>semi-colon separated list of things that must not be included in this collection type.</td>
+<td><code>Nappies; car batteries</code>.</td>
+</tr>
+<tr>
+<td><code>info_url</code></td>
+<td>The page on your council website with information about garbage collection in general. This can be an alternative to, or in addition to, a description field. e.g. <code>http://www.geelongaustralia.com.au/residents/waste/</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>missed_ph</code></td>
+<td>The phone number to call for a missed rubbish collection.</td>
+<td></td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/footpaths' href='#/footpaths'><h2>Footpaths</h2></a>
+    <section class='body'>
+      <h2 id="footpaths-0-2">Footpaths 0.2</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Footpaths known about or maintained by the council.</p>
+
+<h4 id="general-recommendations">General recommendations</h4>
+
+<ul>
+<li>Format: Polyline geospatial data. GeoJSON (preferred), Shapefile</li>
+<li>Dataset name: [Council name] council footpaths</li>
+<li>data.gov.au tag: <code>footpaths</code>, <code>opencouncildata</code>, <code>ocd-footpaths-0.2</code></li>
+</ul>
+
+<h4 id="required-fields">Required fields</h4>
+
+<p>(None)</p>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>paved</code></td>
+<td>Is the surface a hard material such as asphalt, concrete or slate? <code>yes</code> or <code>no</code>.</td>
+</tr>
+<tr>
+<td><code>surf</code></td>
+<td>The main construction material used to create the footpath. Use one of the following values where possible: <br/><code>Asphalt</code>, <code>Concrete</code>, <code>Brick</code> (including slate, cobbles, setts), <code>Gravel</code> (including all graded, unsealed surfaces such as crushed limestone and chert), <code>Sand</code>, <code>Natural</code> (earth, grass, rocks), <code>Boardwalk</code> (including wooden and synthetic bridge decks) , <code>Sprayseal</code>.</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>The width in meters of the footpath. E.g. <code>1.8</code></td>
+</tr>
+<tr>
+<td><code>wheelchair</code></td>
+<td>Accessibility for wheelchair users. <code>yes</code> (no steps, suitable for unassisted use), <code>assisted</code> (occasional small steps navigable with assistance), <code>no</code> (significant obstacles such as steps, bollards or a steep gradient)</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>surf_desc</code></td>
+<td>A free-text description of the surface and condition. E.g. &quot;Gravel path with steps and erosion control channels.&quot;</td>
+</tr>
+<tr>
+<td><code>operator</code></td>
+<td>The name of the council or other organisation (eg VicRoads) maintaining this footpath.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>Council specific reference id for the footpath segment.</td>
+</tr>
+<tr>
+<td><code>bicycle</code></td>
+<td>Are bicycles allowed on this footpath? (Designated bike paths should be provided in a separate &quot;bike paths&quot; dataset.) One of: <code>allowed</code> (bicycles are allowed, as in most parks), <code>no</code> (bicycles are forbidden)</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/events' href='#/events'><h2>Events</h2></a>
+    <section class='body'>
+      <h2 id="events-0-1">Events 0.1</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Public events such as concerts, festivals or workshops organised or promoted by the council.</p>
+
+<h4 id="general-recommendations">General recommendations</h4>
+
+<ul>
+<li>Format: Various file formats have different benefits for different audiences. We recommend publishing in several formats if practical.
+
+<ul>
+<li>CSV: Very widely supported and easy to work with.</li>
+<li>JSON: Preferred format for mobile and web developers.</li>
+<li>GeoJSON: Preferred format for web map developers.</li>
+<li>RSS/Atom: Useful for applications which can consume &quot;feeds&quot; of data.</li>
+</ul></li>
+<li>Dataset name: [Council name] events</li>
+<li>data.gov.au tag: <code>events</code>, <code>opencouncildata</code>, <code>ocd-events-0.1</code></li>
+</ul>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>date</code></td>
+<td>The date on which the event begins, in <code>YYYY-MM-DD</code> format.</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>A short name for the event, for example <code>Hamlet in the park</code></td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>A longer description of the event. This could include HTML.</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>,<code>lon</code></td>
+<td>Location using decimal degrees of latitude and longitude.</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>Location given as text, such as a street address.</td>
+</tr>
+<tr>
+<td><code>time_start</code>,<code>time_end</code></td>
+<td>Start and end times, in <code>HH:MM</code> (24 hour) format.</td>
+</tr>
+<tr>
+<td><code>info_url</code></td>
+<td>URL of a web page with more information about the event.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>date_end</code></td>
+<td>Date on which the event ends, if multiple days.</td>
+</tr>
+<tr>
+<td><code>image_url</code></td>
+<td>URL of an image to accompany the text.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>Council-specific identifier.</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>Council-specific classification of the event.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/drainpipes' href='#/drainpipes'><h2>Drainpipes</h2></a>
+    <section class='body'>
+      <h2 id="drainpipes-0-2">Drainpipes 0.2</h2>
+
+<p><strong>(<a href="https%7C//github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Drain pipes known about or maintained by the council.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>GeoJSON (preferred), Shapefile</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] council drain pipes</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>drainpipes</code>, <code>opencouncildata</code>, <code>ocd-drainpipes-0.2</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<p>(none)</p>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>carrying</code></td>
+<td>The contents of the pipe: <code>Drinking water</code>, <code>Stormwater</code>, <code>Sewage</code></td>
+</tr>
+<tr>
+<td><code>material</code></td>
+<td>One of: <code>Plastic</code>,<code>Concrete</code>,<code>Brick</code> (including stonework), <code>Metal</code>,<code>Earthenware</code>, <code>Earth</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>mat_desc</code></td>
+<td>Free text description of the building material (eg <code>Fibre-reinforced concrete</code>)</td>
+</tr>
+<tr>
+<td><code>form</code></td>
+<td>The general shape. One of: <code>Pipe</code> (closed, buried pipe), <code>Exposed</code> (closed pipe at least partially visible), <code>Open</code>, <code>Culvert</code></td>
+</tr>
+<tr>
+<td><code>height_mm</code></td>
+<td>The height in millimetres of the drain pipe if it&#39;s not symmetrical.</td>
+</tr>
+<tr>
+<td><code>width_mm</code></td>
+<td>The width in millimetres of the drain pipe.</td>
+</tr>
+<tr>
+<td><code>built</code></td>
+<td>The date the drain pipe was constructed.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>Council specific reference id for the drain pipe segment.</td>
+</tr>
+<tr>
+<td><code>comment</code></td>
+<td>Free text, other information as relevant.</td>
+</tr>
+<tr>
+<td><code>operator</code></td>
+<td>Name of council or organisation responsible for maintainance.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/dogzones' href='#/dogzones'><h2>Dog walking zones</h2></a>
+    <section class='body'>
+      <h2 id="dog-walking-zones-0-1">Dog walking zones 0.1</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Dog walking zones are regions within which dog walking is permitted off-leash, on-leash, or not at all. Councils are encouraged to provide comprehensive information on where dog walking is allowed or restricted, including other sources of regulations such as state or national parks.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>GeoJSON (preferred) in EPSG:4326; zipped shapefile</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Dog Walking Zones</td>
+</tr>
+<tr>
+<td>data.gov.au tags</td>
+<td><code>dog-walking</code>, <code>opencouncildata</code>, <code>ocd-dogzones-0.1</code></td>
+</tr>
+</tbody></table>
+
+<p>Polygon areas should not overlap, with the single exception of the <code>Default</code> polygon described under <code>name</code>.</p>
+
+<h4 id="required-fields">Required fields|</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>status</code></td>
+<td>The default dog-walking status for this area, one of: <code>offleash</code>, <code>onleash</code>, <code>no</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>A short name used by your council to identify a zone, such as &quot;Fido Beach&quot;. If the special name <code>Default</code> is used, this is taken to describe general default regulations for public areas throughout the council area, and should be on a polygon covering the whole LGA boundary.</td>
+</tr>
+<tr>
+<td><code>regulation</code></td>
+<td>free text field describing the source of the regulation in force. For example, <code>Council</code> or <code>State park regulations</code></td>
+</tr>
+<tr>
+<td><code>comment</code></td>
+<td>Free text field that could include more specific restrictions (eg, no dogs within 20 metres of playgrounds), information on dog waste management, etc.</td>
+</tr>
+<tr>
+<td><code>off_rules</code></td>
+<td>Free text field with specific rules about off-leash dog walking (eg, effective voice control required).</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields:</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>url</code></td>
+<td>URL pointing to more information about dog walking in this area.</td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>internal council reference number, if any.</td>
+</tr>
+<tr>
+<td><code>on_rules</code></td>
+<td>Free text field with specific rules about on-leash dog walking.</td>
+</tr>
+<tr>
+<td><code>no_rules</code></td>
+<td>Free text field with specific rules about dog-prohibited areas.</td>
+</tr>
+<tr>
+<td><code>status_1</code></td>
+<td>a different status restriction (as above) that applies during a limited set of dates and/or hours. Outside those dates/hours, <code>status</code> applies. Either <code>dates_1</code>, or <code>hours_1</code>, or both, must be provided.</td>
+</tr>
+<tr>
+<td><code>dates_1</code></td>
+<td>Comma-separated, slashed pairs of dates definining ranges during which this status applies (eg, <code>2015-12-01/2016-01-28,2016-04-03/2016-04-13</code>)</td>
+</tr>
+<tr>
+<td><code>hours_1</code></td>
+<td>Hyphenated range of 0-padded 24-hour times defining time range during which this status applies (eg, <code>18:00-08:30</code>). (Comma-separated ranges allowed if necessary.)</td>
+</tr>
+<tr>
+<td><code>status_2</code>,<code>dates_2</code>,<code>hours_2</code></td>
+<td>An additional status that overrides <code>status_1</code> in complex situations.</td>
+</tr>
+</tbody></table>
+
+<p>For example, these restrictions: <em>&quot;Off-leash permitted from 1 December until 28 February and during the Victorian Easter school holidays each year between the hours of 6.00pm and 9.00am. At all other times during this period dogs are permitted on-leash in this area. Outside of these dates dogs are permitted off-leash at all time&quot;</em></p>
+
+<p>This would be implemented as:</p>
+
+<ul>
+<li><code>status</code>:<code>offleash</code></li>
+<li><code>status_1</code>: <code>onleash</code></li>
+<li><code>dates_1</code>: <code>2015-12-01/2016-02-28,2016-03-25/2016-04-11</code></li>
+<li><code>hours_1</code>: <code>18:00-09:00</code></li>
+</ul>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/customer_service_centres' href='#/customer_service_centres'><h2>Customer service centres</h2></a>
+    <section class='body'>
+      <h2 id="customer-service-centres-0-1">Customer service centres 0.1</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Customer service centres are places where citizens go to pay fees (rates, fines, pet registration), deposit planning applications, or otherwise interact with council services.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<ul>
+<li>Format: Point data. CSV (preferred), GeoJSON, Shapefile</li>
+<li>Dataset name: [Council name] customer service centres</li>
+<li>data.gov.au tag: <code>customer-service-centres</code>, <code>opencouncildata</code>, <code>ocd-customer-service-centres-0.1</code></li>
+</ul>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>field</th>
+<th>description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>A name identifying the centre. E.g. &quot;Preston Customer Service Centre&quot;</td>
+</tr>
+<tr>
+<td><code>services</code></td>
+<td>Comma-separated list of services provided by the centre. For example: &quot;pet registration,parking fines,rates&quot;. Possible values include:<br/> <code>pet registration</code>, <code>parking fines</code>, <code>rates</code>, <code>planning</code>, <code>building permits</code>, <code>building permit</code>, <code>planning permit</code>, <code>engineering permit</code>, <code>general permit</code>, <code>infringements</code>, <code>licensing</code>, <code>pet registration</code>, <code>general tourism information</code>, <code>lodgements</code>, <code>keys</code>, <code>engineering permits</code>, <code>temporary car parking permits</code>, <code>collection/drop off</code>, <code>disabled parking application</code>, <code>fencing requests</code>, <code>local laws permit</code>, <code>pension rebate</code>, <code>stat dec</code>, <code>property information request</code> <em>(or other, please provide feedback)</em></td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>Street address. E.g. &quot;274 Gower Street, Preston, VIC 3072&quot;</td>
+</tr>
+<tr>
+<td><code>languages</code></td>
+<td>Comma separated list of non-English languages spoken at the centre (or provided by phone interpreter), in ISO 639-1 (two-letter) codes. For example: <code>it,vi,zh</code></td>
+</tr>
+<tr>
+<td><code>access</code></td>
+<td>Free text description of accessibility. For example: &quot;Fully accessible to wheelchair users; disabled parking at front.&quot;</td>
+</tr>
+<tr>
+<td><code>monday</code>, <code>tuesday</code>, <code>wednesday</code>, <code>thursday</code>, <code>friday</code>, <code>saturday</code>, <code>sunday</code></td>
+<td>Normal opening hours on each day, in 24 hour <code>HH:MM-HH:MM</code> format. For example: <code>08:00-17:30</code>.</td>
+</tr>
+<tr>
+<td><code>holiday</code></td>
+<td>Normal opening hours on public holidays.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<code>desc</code>| Free text description of services or other information.
+<code>phone</code>| Telephone number of this center, if any.</p>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/childcare_centres' href='#/childcare_centres'><h2>Childcare centres</h2></a>
+    <section class='body'>
+      <h2 id="childcare-centres-0-1">Childcare Centres 0.1</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Facilities that look after young children during the day.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>Point data. CSV (preferred), GeoJSON</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] childcare centres</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>childcare-centres</code>, <code>opencouncildata</code>, <code>ocd-childcare-centres-0.1</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Name of the centre</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>operator</code></td>
+<td>The council (or company) that operates the centre.</td>
+</tr>
+<tr>
+<td><code>contact_ph</code></td>
+<td>The centre&#39;s telephone number.</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>A URL with more information about the centre.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>ref</code></td>
+<td>The internal council ID for the centre, if any.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/building-accessibility' href='#/building-accessibility'><h2>Building accessibility ratings</h2></a>
+    <section class='body'>
+      <h2 id="building-accessibility-ratings-1-1">Building accessibility ratings 1.1</h2>
+
+<p>Some councils provide ratings on accessibility of buildings for wheelchair users. These ratings are in high demand by certain community groups wanting to choose venues suitable for all their members. These ratings may be available for only council buildings, or more broadly.</p>
+
+<p>There are no known standards for this kind of data, and some councils combine them in different ways (eg, a rating of 0, 1 or 2 for the building as a whole).</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>CSV (preferred), Shapefile, GeoJSON</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Building Accessibility Ratings</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>building-accessibility</code>, <code>opencouncildata</code>, <code>ocd-building-accessibility-1.1</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees of centroid or entrance to building. (EPSG:4326)</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>entrance</code></td>
+<td>Access into the building and its main services.<br/> <code>yes</code>: an unpowered, wheelchair user can enter the building and access public services without assistance<br/><code>assisted</code>: a wheelchair user can enter the building if assisted. <em>For example, a steep ramp, or a lift requiring an authorised operator.</em><br/><code>no</code>: there is limited or no access for wheelchair users. <em>For example, a cinema with a ramp entrance, but steps to individual theatres.</em></td>
+</tr>
+<tr>
+<td><code>parking</code></td>
+<td><code>yes</code>: disabled parking spaces are available<br/> <code>no</code>: there is no designated disabled parking</td>
+</tr>
+<tr>
+<td><code>toilets</code></td>
+<td><code>yes</code>: toilets suitable for wheelchair users are available<br/><code>no</code>: there are no toilets suitable for use by wheelchair users</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>A name identifying the building, organisation or business name.</td>
+</tr>
+<tr>
+<td><code>address</code></td>
+<td>The building&#39;s street address.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>id</code></td>
+<td>A council-specific identifier that can used to link to other council-published data for that building, such as a building footprint.</td>
+</tr>
+<tr>
+<td><code>assessed</code></td>
+<td>Date of most recent accessibility assessment, in ISO 8601 (YYYY-MM-DD).</td>
+</tr>
+<tr>
+<td><code>comment</code></td>
+<td>Text description supplementing the <code>entrance</code>,<code>parking</code> and <code>toilets</code> fields.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+  <article class=''>
+    <a name='/animal-registrations' href='#/animal-registrations'><h2>Animal registrations</h2></a>
+    <section class='body'>
+      <h2 id="animal-registrations-0-2">Animal registrations 0.2</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Registrations of animals (usually cats and dogs). </p>
+
+<p>This be a spatial dataset if it includes the location of the property where the animal is registered, or it may be non-spatial.</p>
+
+<p>It is up to the council to decide whether to include data with privacy considerations such as location. This standard makes no recommendation on that issue.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>CSV, also optionally GeoJSON if location data included.</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] animal registrations</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>animal-registrations</code>, <code>opencouncildata</code>, <code>ocd-animal-registrations-0.2</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>The registered name of the animal. If not known, it should be left blank. For example: <code>Rex</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>The kind of animal: <code>dog</code>, <code>cat</code>, etc.</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>breed</code></td>
+<td>The breed of animal. Cross breeds can be indicated by as <code>Poodle X</code>. For example: <code>Kelpie</code></td>
+</tr>
+<tr>
+<td><code>colour</code></td>
+<td>A simple description of the animal&#39;s colouring. <code>Tri</code> indicates three colours, usually black, tan and white. For example: <code>Grey</code>, <code>Black and white</code></td>
+</tr>
+<tr>
+<td><code>sex</code></td>
+<td>Male or female: <code>M</code> or <code>F</code></td>
+</tr>
+<tr>
+<td><code>desexed</code></td>
+<td>Whether the animal has been desexed (neutered). <code>Y</code> or <code>N</code></td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>The animal&#39;s registration identifier.</td>
+</tr>
+<tr>
+<td><code>microchip</code></td>
+<td>Whether the animal has been fitted with a microchip. <code>Y</code> or <code>N</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees of the property where the animal is registered. See the note in intro. (EPSG:4326)</td>
+</tr>
+<tr>
+<td><code>suburb</code></td>
+<td>The suburb in which the animal is registered. For example: <code>Inverleigh</code></td>
+</tr>
+<tr>
+<td><code>postcode</code></td>
+<td>The postcode in which the animal is registered. For example: <code>4563</code></td>
+</tr>
+<tr>
+<td><code>expiration</code></td>
+<td>The date on which the registration expires. A date in the past or a blank value, indicates that the animal is currently unregistered.</td>
+</tr>
+<tr>
+<td><code>birth_year</code></td>
+<td>Year the animal was born.</td>
+</tr>
+<tr>
+<td><code>tattoo</code></td>
+<td>Whether the animal has been tattooed, usually in the ear to indicate desexing. <code>Y</code> or <code>N</code></td>
+</tr>
+<tr>
+<td><code>deceased</code></td>
+<td>Whether the animal is deceased. <code>Y</code> or <code>N</code></td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>A council-specific registration classification. This can include terms like <code>Working dog</code>, <code>Pet</code>, <code>Pensioner</code>.</td>
+</tr>
+</tbody></table>
+
+    </section>
+  </article>
+
+</section>
+
+  <!--[if lt IE 9]><script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+  <script src='assets.js' type='text/javascript'></script>
+  <script>require('boot');</script>
+</body>
+</html>

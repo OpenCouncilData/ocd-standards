@@ -1,0 +1,125 @@
+<h2 id="animal-registrations-0-2">Animal registrations 0.2</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Registrations of animals (usually cats and dogs). </p>
+
+<p>This be a spatial dataset if it includes the location of the property where the animal is registered, or it may be non-spatial.</p>
+
+<p>It is up to the council to decide whether to include data with privacy considerations such as location. This standard makes no recommendation on that issue.</p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>CSV, also optionally GeoJSON if location data included.</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] animal registrations</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>animal-registrations</code>, <code>opencouncildata</code>, <code>ocd-animal-registrations-0.2</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>name</code></td>
+<td>The registered name of the animal. If not known, it should be left blank. For example: <code>Rex</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>The kind of animal: <code>dog</code>, <code>cat</code>, etc.</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>breed</code></td>
+<td>The breed of animal. Cross breeds can be indicated by as <code>Poodle X</code>. For example: <code>Kelpie</code></td>
+</tr>
+<tr>
+<td><code>colour</code></td>
+<td>A simple description of the animal&#39;s colouring. <code>Tri</code> indicates three colours, usually black, tan and white. For example: <code>Grey</code>, <code>Black and white</code></td>
+</tr>
+<tr>
+<td><code>sex</code></td>
+<td>Male or female: <code>M</code> or <code>F</code></td>
+</tr>
+<tr>
+<td><code>desexed</code></td>
+<td>Whether the animal has been desexed (neutered). <code>Y</code> or <code>N</code></td>
+</tr>
+<tr>
+<td><code>ref</code></td>
+<td>The animal&#39;s registration identifier.</td>
+</tr>
+<tr>
+<td><code>microchip</code></td>
+<td>Whether the animal has been fitted with a microchip. <code>Y</code> or <code>N</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees of the property where the animal is registered. See the note in intro. (EPSG:4326)</td>
+</tr>
+<tr>
+<td><code>suburb</code></td>
+<td>The suburb in which the animal is registered. For example: <code>Inverleigh</code></td>
+</tr>
+<tr>
+<td><code>postcode</code></td>
+<td>The postcode in which the animal is registered. For example: <code>4563</code></td>
+</tr>
+<tr>
+<td><code>expiration</code></td>
+<td>The date on which the registration expires. A date in the past or a blank value, indicates that the animal is currently unregistered.</td>
+</tr>
+<tr>
+<td><code>birth_year</code></td>
+<td>Year the animal was born.</td>
+</tr>
+<tr>
+<td><code>tattoo</code></td>
+<td>Whether the animal has been tattooed, usually in the ear to indicate desexing. <code>Y</code> or <code>N</code></td>
+</tr>
+<tr>
+<td><code>deceased</code></td>
+<td>Whether the animal is deceased. <code>Y</code> or <code>N</code></td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>A council-specific registration classification. This can include terms like <code>Working dog</code>, <code>Pet</code>, <code>Pensioner</code>.</td>
+</tr>
+</tbody></table>
