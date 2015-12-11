@@ -1,3 +1,8 @@
+---
+category: Time-sensitive
+path: '/roadclosures'
+title: 'Road closures'
+---
 ## Road closures 0.2
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 

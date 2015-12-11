@@ -1,3 +1,8 @@
+---
+category: Misc
+path: '/3d-buildings'
+title: '3D buildings'
+---
 ## 3D buildings 0.2
 
 A 3D model (not just outline plus height) of buildings and other physical features, used for planning, architecture and communicating proposed construction. Model files should be textured if possible.

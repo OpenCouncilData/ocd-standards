@@ -1,3 +1,8 @@
+---
+category: Infrastructure
+path: '/footpaths'
+title: 'Footpaths'
+---
 ## Footpaths 0.2
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 

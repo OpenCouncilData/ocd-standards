@@ -1,3 +1,8 @@
+---
+category: Services
+path: '/childcare'
+title: 'Childcare centres'
+---
 ## Childcare Centres 0.1
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 

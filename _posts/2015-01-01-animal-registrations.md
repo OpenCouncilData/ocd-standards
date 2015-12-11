@@ -1,3 +1,8 @@
+---
+category: Services
+path: '/animalregistrations'
+title: 'Animal registrations'
+---
 ## Animal registrations 0.2
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 

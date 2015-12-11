@@ -1,3 +1,8 @@
+---
+category: Services
+path: '/servicecentres'
+title: 'Customer service centres'
+---
 ## Customer service centres 0.1
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 

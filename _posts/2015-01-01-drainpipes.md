@@ -1,3 +1,8 @@
+---
+category: Infrastructure
+path: '/drainpipes'
+title: 'Drainpipes'
+---
 ## Drainpipes 0.2
 **([Comments welcome!](https|//github.com/okfnau/open-council-data/issues))**
 

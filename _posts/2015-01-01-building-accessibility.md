@@ -1,3 +1,8 @@
+---
+category: Misc
+path: '/building-accessibility'
+title: 'Building accessibility ratings'
+---
 ## Building accessibility ratings 1.1
 
 Some councils provide ratings on accessibility of buildings for wheelchair users. These ratings are in high demand by certain community groups wanting to choose venues suitable for all their members. These ratings may be available for only council buildings, or more broadly.
