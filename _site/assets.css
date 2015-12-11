@@ -667,17 +667,6 @@ td:first-child code {
     font-size:120%;
 }
 
-#banner { padding-left: 260px; }
-@media (max-width: 700px) {
-    #sidebar { width: 160px; }
-    #content { padding-left: 160px; }
-    #banner { padding-left: 170px; }
-}
-
-@media (max-width: 500px) {
-    #sidebar { display:none; }
-    #content,#banner { padding-left: 0px; padding-right:0px;}
-}
 
 h4 {
     color:black;
@@ -771,4 +760,19 @@ h4 {
 }
 #banner #ocd-links li:hover {
     background-color: hsl(204, 83%, 53%); 
+}
+
+#banner { padding-left: 260px; }
+@media (max-width: 700px) {
+    #sidebar { width: 155px; }
+    #content { padding-left: 160px; }
+    #banner { padding-left: 170px; }
+    #sidebar input { display: none; }
+}
+
+@media (max-width: 500px) {
+    #sidebar { display:none; }
+    #content  { padding-left: 5px; padding-right:5px;}
+    #banner { padding-left: 5px; padding-right:5px; padding-top:0;}
+    #banner h1 { padding-top: 0.5em; }
 }
