@@ -9,7 +9,7 @@ Zones are physical regions within which residential garbage collection of a give
 
 Zones that share the same boundaries should be provided as a single polygon with multiple sets of tags (`rub_day`, `grn_day` etc).
 
-[OpenBinMap.org](http://openbinmap.org) shows garbage collection zones already published:
+[OpenBinMap.org](http://openbinmap.org) shows garbage collection zones already published.
 
 ####General recommendations:
 

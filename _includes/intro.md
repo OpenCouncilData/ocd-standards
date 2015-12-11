@@ -1,4 +1,4 @@
-This [Github repository](http://github.com/OpenCouncilData/open-council-data) contains lightweight standards for Australian councils publishing open data.
+These are lightweight standards for Australian councils publishing open data. They are maintained in a [Github repository](http://github.com/OpenCouncilData/open-council-data) that anyone can contribute to.
 
 ### Why
 
