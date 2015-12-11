@@ -9,6 +9,8 @@ A 3D model (not just outline plus height) of buildings and other physical featur
 
 A collection of 3D model files should be bundled with a point origin file, to correctly locate each 3D model file in real-world coordinates.
 
+File|Contents
+----|----
 `origins.csv` (1 file)| one row per model, with latitude and longitude of the origin of that file
 `(modelname).3ds` (1+ files)| one file per model. Each model must be oriented with north (increasing latitude) along the positive `Y` axis, and east (increasing longitude) along the positive `X` axis. 
 
