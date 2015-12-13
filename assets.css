@@ -762,6 +762,11 @@ h4 {
     background-color: hsl(204, 83%, 53%); 
 }
 
+#oklogo {
+    float:right;
+    height:112px;
+}
+
 #banner { padding-left: 260px; }
 @media (max-width: 700px) {
     #sidebar { width: 155px; }
@@ -775,4 +780,7 @@ h4 {
     #content  { padding-left: 5px; padding-right:5px;}
     #banner { padding-left: 5px; padding-right:5px; padding-top:0;}
     #banner h1 { padding-top: 0.5em; }
+    #oklogo { height: 75px; }
 }
+
+

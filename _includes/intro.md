@@ -1,4 +1,6 @@
-These are lightweight standards for Australian councils publishing open data. They are maintained in a [Github repository](http://github.com/OpenCouncilData/open-council-data) that anyone can contribute to.
+These are lightweight standards for Australian councils publishing open data. This is an open collaboration between councils, Open Knowledge Australia, MAV Technology, the Local Government Spatial Reference Group and other interested participants. 
+
+[Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Melbourne) chair the group.
 
 ### Why
 
@@ -11,8 +13,6 @@ src='https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/embed_
 allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
 </iframe>
  -->
-### Who
-This is an open collaboration between councils, Open Knowledge Australia, MAV Technology, the Local Government Spatial Reference Group and other interested participants. [Steve Bennett](http://stevebennett.me) (Open Knowledge) and Will McIntosh (City of Melbourne) chair the group.
 
 ### Principles
 We try to make conforming to the standard as easy as possible.
@@ -35,6 +35,8 @@ We try to make conforming to the standard as easy as possible.
     - Shapefile: no attribute (preferred), or ""
 
 ### Participate
+
+These standards are maintained in a [Github repository](http://github.com/OpenCouncilData/open-council-data) that anyone can contribute to.
 
 You can help create and refine these standards by:
 
