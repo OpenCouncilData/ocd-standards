@@ -1,5 +1,5 @@
 ---
-category: Services
+category: Non-spatial
 path: '/animalregistrations'
 title: 'Animal registrations'
 ---
@@ -8,7 +8,7 @@ title: 'Animal registrations'
 
 Registrations of animals (usually cats and dogs). 
 
-This be a spatial dataset if it includes the location of the property where the animal is registered, or it may be non-spatial.
+This may be a spatial dataset if it includes the location of the property where the animal is registered, or it may be non-spatial.
 
 It is up to the council to decide whether to include data with privacy considerations such as location. This standard makes no recommendation on that issue.
 

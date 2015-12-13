@@ -4,7 +4,7 @@ These are lightweight standards for Australian councils publishing open data. Th
 
  To allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
 
-See the number of datasets already published by councils on the [Open Council Data Map](http://maps.opencouncildata.org).
+See the number of datasets already published by councils on the [Open Council Data Map](http://map.opencouncildata.org).
 
 <!-- <iframe width='100%' height='480' frameborder='0'
 src='https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/embed_map'
