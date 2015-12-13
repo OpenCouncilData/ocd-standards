@@ -36,6 +36,5 @@ field | description
 #### Optional fields
 Field | Description
 ------|------------
-<<<<<<< HEAD
 `desc`| Free text description of services or other information.
 `phone`| Telephone number of this center, if any.
