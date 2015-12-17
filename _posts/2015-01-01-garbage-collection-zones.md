@@ -11,6 +11,9 @@ Zones that share the same boundaries should be provided as a single polygon with
 
 [OpenBinMap.org](http://openbinmap.org) shows garbage collection zones already published.
 
+&rarr; <i>**[Find datasets tagged \[waste-collection\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=waste-collection)**</i>
+
+
 ####General recommendations:
 
 &nbsp;| Recommendation

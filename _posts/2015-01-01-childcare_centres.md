@@ -8,6 +8,9 @@ title: 'Childcare centres'
 
 Facilities that look after young children during the day.
 
+&rarr; <i>**[Find datasets tagged \[childcare-centres\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=childcare-centres)**</i>
+
+
 ####General recommendations:
 
 &nbsp;| Recommendation

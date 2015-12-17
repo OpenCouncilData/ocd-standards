@@ -9,6 +9,8 @@ Some councils provide ratings on accessibility of buildings for wheelchair users
 
 There are no known standards for this kind of data, and some councils combine them in different ways (eg, a rating of 0, 1 or 2 for the building as a whole).
 
+&rarr; <i>**[Find datasets tagged \[accessibility\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=accessibility)**</i>
+
 ####General recommendations:
 
 &nbsp;| Recommendation
