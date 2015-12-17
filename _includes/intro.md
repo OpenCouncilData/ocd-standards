@@ -34,6 +34,8 @@ We try to make conforming to the standard as easy as possible.
     - GeoJSON: no attribute (preferred), or ""
     - Shapefile: no attribute (preferred), or ""
 
+For more advice, including licensing, please see the [Open Council Data Toolkit](http://opencouncildata.org).
+
 ### Participate
 
 These standards are maintained in a [Github repository](http://github.com/OpenCouncilData/open-council-data) that anyone can contribute to.
