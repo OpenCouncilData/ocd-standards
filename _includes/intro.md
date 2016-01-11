@@ -45,5 +45,5 @@ You can help create and refine these standards by:
 * participating on the [Open Council Data Google Group](https://groups.google.com/forum/#!forum/opencouncildata)
 * raising and commenting on issues on the [Github issue tracker](https://github.com/OpenCouncilData/open-council-data/issues)
 * joining the fortnightly Skype chat ([email Will McIntosh](mailto:will.mcintosh@melbourne.vic.gov.au))
-* coming to a weekly [Open Knowledge Melbourne meetup](www.meetup.com/Open-Knowledge-Melbourne/)
+* coming to a weekly [Open Knowledge Melbourne meetup](https://www.meetup.com/Open-Knowledge-Melbourne/)
 * uploading your data to data.gov.au ([get started here](http://opencouncildata.org))
