@@ -44,16 +44,13 @@ Field | Description
 `url`| A URL with more information about the facility.
 `subtype` | A subclassification according to the council's needs. (No defined list of these at present.)
 `address` | Street address. E.g. "274 Gower Street, Preston, VIC 3072"
-| `access`| Free text description of accessibility. For example: "Fully accessible to wheelchair users; disabled parking at front."
-| `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`| Normal opening hours on each day, in 24 hour `HH:MM-HH:MM` format. For example: `08:00-17:30`.
-| `holiday`| Normal opening hours on public holidays.
+`access`| Free text description of accessibility. For example: "Fully accessible to wheelchair users; disabled parking at front."
+`monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`| Normal opening hours on each day, in 24 hour `HH:MM-HH:MM` format. For example: `08:00-17:30`.
+`holiday`| Normal opening hours on public holidays.
 
 #### Optional fields
 
 Field | Description
 ------|------------
 `type2`| If a facility fits equally into several categories (for example, a childcare centre is also a kindergarten), add the extra type here. If there are two distinct services housed together (for example, a childcare centre and a maternal health clinic), it's better to have two distinct entries with slightly different locations.
-
-
-
-`ref`| The internal council ID for the centre, if any.
+`ref`| The internal council ID for the facility, if any.
