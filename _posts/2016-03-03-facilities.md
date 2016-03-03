@@ -35,6 +35,7 @@ Types: `library`, `aged care`, `neighbourhood house`, `health clinic`, `medical 
 
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `owned_by`:The council name, or other organisation, that owns the facility.
@@ -48,6 +49,7 @@ Field | Description
 | `holiday`| Normal opening hours on public holidays.
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `type2`| If a facility fits equally into several categories (for example, a childcare centre is also a kindergarten), add the extra type here. If there are two distinct services housed together (for example, a childcare centre and a maternal health clinic), it's better to have two distinct entries with slightly different locations.

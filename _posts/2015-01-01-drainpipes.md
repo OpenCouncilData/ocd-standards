@@ -21,14 +21,18 @@ data.gov.au tag| `drainpipes`, `opencouncildata`, `ocd-drainpipes-0.2`
 
 
 #### Required fields
+
 (none)
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `carrying`|The contents of the pipe: `Drinking water`, `Stormwater`, `Sewage`
 `material`| One of: `Plastic`,`Concrete`,`Brick` (including stonework), `Metal`,`Earthenware`, `Earth`
+
 #### Optional fields
+
 Field | Description
 ------|------------
 `mat_desc`| Free text description of the building material (eg `Fibre-reinforced concrete`)

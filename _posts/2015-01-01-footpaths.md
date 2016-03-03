@@ -15,9 +15,11 @@ Footpaths known about or maintained by the council.
 * data.gov.au tag: `footpaths`, `opencouncildata`, `ocd-footpaths-0.2`
 
 #### Required fields
+
 (None)
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `paved`| Is the surface a hard material such as asphalt, concrete or slate? `yes` or `no`. 
@@ -26,6 +28,7 @@ Field | Description
 `wheelchair`| Accessibility for wheelchair users. `yes` (no steps, suitable for unassisted use), `assisted` (occasional small steps navigable with assistance), `no` (significant obstacles such as steps, bollards or a steep gradient)
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `surf_desc`| A free-text description of the surface and condition. E.g. "Gravel path with steps and erosion control channels."

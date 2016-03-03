@@ -4,6 +4,7 @@ path: '/roadclosures'
 title: 'Road closures'
 ---
 ## Road closures 0.2
+
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Locations of planned and unplanned road closures due to events, maintenance, natural events or other reasons. For maximum usefulness, this dataset should be updated whenever new information is available (perhaps hourly). Past closures should be removed from the dataset within a short period (eg, 1 day) in order to keep the whole dataset size manageable.
@@ -22,6 +23,7 @@ If possible, sort the data with most imminent closures first.
 
 
 #### Required fields
+
 Field | Description
 ------|------------
 `status`| The level of impact: `closed` (no movement), `restricted` (speed restrictions and possible lane closures), `open` (open, included if necessary to avoid doubt), `detour` (this line feature is a recommended detour around another closure)
@@ -29,6 +31,7 @@ Field | Description
 `start_time`| Time of start of closure, in ISO8601 local timezone format: `08:30+10` (preferred) or no timezone format: `08:30`. For an unplanned closure without an exact known start date, use any time in the past. *Do not use UTC format*
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `end_date`, `end_time` | As for `start_date`, `start_time` for the anticipated end of the closure, if known.
@@ -39,6 +42,7 @@ Field | Description
 `updated`: The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, `2015-06-04T08:15+10`)
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `source`|The source of the closure, eg `Victoria Police`, `Western Energy`

@@ -4,6 +4,7 @@ path: '/parkingzones'
 title: 'Parking zones'
 ---
 ## Parking zones 0.2
+
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Areas in which parking is regulated, including on-street metered and unmetered parking, no-parking zones and car parks.
@@ -21,15 +22,18 @@ Spatial type|Polygon. Each polygon represents one area within which restrictions
 
 
 #### Required fields
+
 * `mode`: see description in _Time-dependent restrictions_
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `updated`| The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, `2015-06-04T08:15+10`)
 `ref`| The council's identifier for the parking zone.
 
 ### Time-dependent restrictions
+
 Field | Description
 ------|------------
 `start`, `end`|Time at which this parking restriction commences/ends, in 24 hour time. Times outside this range are assumed to be free, unless additional restrictions given.<br/>*For example: 17:30*
@@ -42,6 +46,7 @@ Field | Description
 `start2`, `end2`, `mode2`, `hourlyfee2`, etc.|When different times of day have different restrictions, specify them with additional columns ending in `2`,`3` etc.
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `operator`|The organisation that manages this parking zone. eg `Melbourne`, `VicRoads`, `Interpark`.

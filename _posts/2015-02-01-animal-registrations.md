@@ -4,6 +4,7 @@ path: '/animalregistrations'
 title: 'Animal registrations'
 ---
 ## Animal registrations 0.2
+
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 Registrations of animals (usually cats and dogs). 
@@ -28,6 +29,7 @@ Field | Description
 `type` | The kind of animal: `dog`, `cat`, etc. 
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `breed` | The breed of animal. Cross breeds can be indicated by as `Poodle X`. For example: `Kelpie`
@@ -38,6 +40,7 @@ Field | Description
 `microchip`|Whether the animal has been fitted with a microchip. `Y` or `N`
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `lat`, `lon`| Latitude, longitude, decimal degrees of the property where the animal is registered. See the note in intro. (EPSG:4326) 

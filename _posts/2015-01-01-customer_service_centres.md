@@ -34,6 +34,7 @@ field | description
 | `holiday`| Normal opening hours on public holidays.
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `desc`| Free text description of services or other information.

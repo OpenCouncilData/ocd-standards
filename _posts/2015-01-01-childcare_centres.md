@@ -27,6 +27,7 @@ Field | Description
 `name`| Name of the centre
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `operator`| The council (or company) that operates the centre. 
@@ -34,6 +35,7 @@ Field | Description
 `url`| A URL with more information about the centre.
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `ref`| The internal council ID for the centre, if any.
