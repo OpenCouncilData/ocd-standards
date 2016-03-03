@@ -8,7 +8,7 @@ title: 'Footpaths'
 
 Footpaths known about or maintained by the council.
 
-####General recommendations
+#### General recommendations
 
 * Format: Polyline geospatial data. GeoJSON (preferred), Shapefile
 * Dataset name: [Council name] council footpaths

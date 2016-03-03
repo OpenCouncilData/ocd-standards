@@ -11,7 +11,7 @@ There are no known standards for this kind of data, and some councils combine th
 
 &rarr; <i>**[Find datasets tagged \[accessibility\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=accessibility)**</i>
 
-####General recommendations:
+#### General recommendations:
 
 &nbsp;| Recommendation
 ------|------------
@@ -26,6 +26,7 @@ Field | Description
 `lat`, `lon`| Latitude, longitude, decimal degrees of centroid or entrance to building. (EPSG:4326)
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `entrance`| Access into the building and its main services.<br/> `yes`: an unpowered, wheelchair user can enter the building and access public services without assistance<br/>`assisted`: a wheelchair user can enter the building if assisted. _For example, a steep ramp, or a lift requiring an authorised operator._<br/>`no`: there is limited or no access for wheelchair users. _For example, a cinema with a ramp entrance, but steps to individual theatres._
@@ -35,6 +36,7 @@ Field | Description
 `address`| The building's street address.
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `id`| A council-specific identifier that can used to link to other council-published data for that building, such as a building footprint.

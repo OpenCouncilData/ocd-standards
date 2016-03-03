@@ -14,7 +14,7 @@ Zones that share the same boundaries should be provided as a single polygon with
 &rarr; <i>**[Find datasets tagged \[waste-collection\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=waste-collection)**</i>
 
 
-####General recommendations:
+#### General recommendations:
 
 &nbsp;| Recommendation
 ------|------------
@@ -22,7 +22,7 @@ Zones that share the same boundaries should be provided as a single polygon with
  Dataset name| [Council name] Garbage Collection Zones
  data.gov.au tags| `waste-collection`, `ocd-garbage`, `ocd-garbage-2.1`
 
-####Required fields:
+#### Required fields:
 
 At least one of the following fields should have a value. If multiple collection types share a zone, publish a single polygon with values in several columns. For example, in one area, rubbish is collected on Tuesdays, and recycling is every second Thursday. If the zones are different (even if overlapping), publish multiple polygons.*
 
@@ -36,13 +36,13 @@ Field | Description|Example
  `grn_day`, `grn_weeks`, `grn_start`, `grn_dates`| Schedule for green waste collection, as above.
  `hw_day`, `hw_weeks`, `hw_start`, `hw_dates`| Schedule for hard waste collection, as above.
 
-####Recommended fields:
+#### Recommended fields:
 
 Field | Description|Example
 ------|------------|-------
 `name`| a short name used by your council to identify a zone|"Monday Area 2"
 
-####Optional fields:
+#### Optional fields:
 
 Field | Description|Example
 ------|------------|-------

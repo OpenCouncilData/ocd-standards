@@ -8,7 +8,7 @@ title: 'Road closures'
 
 Locations of planned and unplanned road closures due to events, maintenance, natural events or other reasons. For maximum usefulness, this dataset should be updated whenever new information is available (perhaps hourly). Past closures should be removed from the dataset within a short period (eg, 1 day) in order to keep the whole dataset size manageable.
 
-####General recommendations:
+#### General recommendations:
 
 &nbsp;| Recommendation
 ------|------------
@@ -21,14 +21,14 @@ If possible, sort the data with most imminent closures first.
 
 
 
-####Required fields
+#### Required fields
 Field | Description
 ------|------------
 `status`| The level of impact: `closed` (no movement), `restricted` (speed restrictions and possible lane closures), `open` (open, included if necessary to avoid doubt), `detour` (this line feature is a recommended detour around another closure)
 `start_date`| Date of start of closure, in ISO8601 format: `2015-06-04`
 `start_time`| Time of start of closure, in ISO8601 local timezone format: `08:30+10` (preferred) or no timezone format: `08:30`. For an unplanned closure without an exact known start date, use any time in the past. *Do not use UTC format*
 
-####Recommended fields
+#### Recommended fields
 Field | Description
 ------|------------
 `end_date`, `end_time` | As for `start_date`, `start_time` for the anticipated end of the closure, if known.
@@ -38,7 +38,7 @@ Field | Description
 `direction`: Direction in which traffic is affected. One of `Both`, `Inbound`,`Outbound`,`North`,`South`,`West`,`East`, etc.
 `updated`: The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, `2015-06-04T08:15+10`)
 
-####Optional fields
+#### Optional fields
 Field | Description
 ------|------------
 `source`|The source of the closure, eg `Victoria Police`, `Western Energy`

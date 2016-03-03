@@ -15,7 +15,7 @@ The range of services provided varies greatly across the country. It would be ve
 
 &rarr; <i>**[Find datasets tagged \[facilities\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=facilities)**</i>
 
-####General recommendations:
+#### General recommendations:
 
 &nbsp;| Recommendation
 ------|------------

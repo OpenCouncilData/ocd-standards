@@ -12,7 +12,7 @@ This may be a spatial dataset if it includes the location of the property where 
 
 It is up to the council to decide whether to include data with privacy considerations such as location. This standard makes no recommendation on that issue.
 
-####General recommendations:
+#### General recommendations:
 
 &nbsp;| Recommendation
 ------|------------

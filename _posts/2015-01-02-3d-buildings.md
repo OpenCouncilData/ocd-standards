@@ -16,7 +16,7 @@ File|Contents
 
 In the fields below, "council ID" means the text string identifying the council, given by the part of the council's website before ".vic.gov.au". Hence, "melbourne", "geelong", "corangamite" etc.
 
-####General recommendations:
+#### General recommendations:
 
 &nbsp; | Recommendation
 ------|------------
@@ -34,6 +34,7 @@ Field | Description
 `elevation`| elevation of the origin (Z value 0) relative to sea level, in metres.
 
 #### Recommended fields
+
 Field | Description
 ------|------------
 `status`| status of the physical building. One of: `proposed` (in the planning process, work not yet begun), `construction`, `built` (finished), `demolished` (demolition has commenced). If not provided, `built` is assumed.
@@ -43,6 +44,7 @@ Field | Description
 `ref`| council-specific identifier for the model.
 
 #### Optional fields
+
 Field | Description
 ------|------------
 `src`| source of the model as a whole. One of: `AAM` (AAM Group), council ID, `architect` (provided by any architecture firm), or other value as appropriate.
@@ -61,6 +63,7 @@ Field | Description
 `suburb`| name of suburb building is within.
 
 #### Fields under discussion
+
 * `isPrimary`
 * `renderType`: `textured`, `color_layers`
 * `IsWFinding`: `Yes`, `No`
