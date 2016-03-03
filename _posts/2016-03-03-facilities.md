@@ -13,7 +13,7 @@ title: 'Facilities'
 
 The range of services provided varies greatly across the country. It would be very difficult to define a precise vocabulary which every council agrees on, so if none the proposed types fits your need, please use another, and please open an issue or start a discussion to suggest it.
 
-&rarr; <i>**[Find datasets tagged \[facilicities\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=facilities)**</i>
+&rarr; <i>**[Find datasets tagged \[facilities\] on data.gov.au](http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&q=&tags=facilities)**</i>
 
 ####General recommendations:
 
