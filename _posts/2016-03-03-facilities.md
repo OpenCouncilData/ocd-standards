@@ -21,7 +21,7 @@ The range of services provided varies greatly across the country. It would be ve
 ------|------------
 Format| Point data. CSV (preferred), GeoJSON
 Dataset name| [Council name] services and facilities
-data.gov.au tag| `facilities`, `opencouncildata`, `ocd-facilities-0.1`
+data.gov.au tag| `facilities`, `opencouncildata`
 
 #### Required fields
 
