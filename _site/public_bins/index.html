@@ -1,0 +1,80 @@
+<h2 id="public-bins-0-1">Public Bins 0.1</h2>
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+<p>Bins provided by councils for public use.</p>
+<p>&rarr; <i><strong><a href="http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&amp;q=&amp;tags=public-bins">Find datasets tagged [public-bins] on data.gov.au</a></strong></i></p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>Point data. CSV (preferred), GeoJSON</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Public Bins</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>public-bins</code>, <code>ocd-public-bins</code>, <code>ocd-public-bins-0.1</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>operator</code></td>
+<td>The council (or company) that operates the station.</td>
+</tr>
+<tr>
+<td><code>contact_ph</code></td>
+<td>The station&#39;s telephone number.</td>
+</tr>
+
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>location</code></td>
+<td>Description of where the bin is located.</td>
+</tr>
+<tr>
+<td><code>info_url</code></td>
+<td>URL of area where bin is located (e.g. park, facility, etc) or of operator responcibile for managing the bin.</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>Type of bin. Could be one of <code>cigarette</code>, <code>waste</code> or <code>recycling</code></td>
+</tr>
+</tbody></table>

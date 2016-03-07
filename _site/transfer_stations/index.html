@@ -1,0 +1,107 @@
+<h2 id="transfer-stations-0-1">Transfer Stations 0.1</h2>
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+<p>Facilities which accept bulk waste and recyclables.</p>
+<p>&rarr; <i><strong><a href="http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&amp;q=&amp;tags=transfer-stations">Find datasets tagged [transfer-stations] on data.gov.au</a></strong></i></p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+<table><thead>
+<tr>
+<th>&nbsp;</th>
+<th>Recommendation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Format</td>
+<td>Point data. CSV (preferred), GeoJSON</td>
+</tr>
+<tr>
+<td>Dataset name</td>
+<td>[Council name] Transfer Stations</td>
+</tr>
+<tr>
+<td>data.gov.au tag</td>
+<td><code>transfer-stations</code>, <code>ocd-transfer-stations</code>, <code>ocd-transfer-stations-0.1</code></td>
+</tr>
+</tbody></table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>lat</code>, <code>lon</code></td>
+<td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Name of the station</td>
+</tr>
+</tbody></table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>operator</code></td>
+<td>The council (or company) that operates the station.</td>
+</tr>
+<tr>
+<td><code>contact_ph</code></td>
+<td>The station&#39;s telephone number.</td>
+</tr>
+<tr>
+<td><code>info_url</code></td>
+<td>A URL with more information about the station.</td>
+</tr>
+</tbody></table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>mon_hours_start</code>, <code>mon_hours_end</code></td>
+<td>Monday opening hours</td>
+</tr>
+<tr>
+<td><code>tue_hours_start</code>, <code>tue_hours_end</code></td>
+<td>As for monday hours</td>
+</tr><tr>
+<td><code>wed_hours_start</code>, <code>wed_hours_end</code></td>
+<td>As for monday hours</td>
+</tr><tr>
+<td><code>thu_hours_start</code>, <code>thu_hours_end</code></td>
+<td>As for monday hours</td>
+</tr><tr>
+<td><code>fri_hours_start</code>, <code>fri_hours_end</code></td>
+<td>As for monday hours</td>
+</tr><tr>
+<td><code>sat_hours_start</code>, <code>sat_hours_end</code></td>
+<td>As for monday hours</td>
+</tr><tr>
+<td><code>sun_hours_start</code>, <code>sun_hours_end</code></td>
+<td>As for monday hours</td>
+</tr>
+
+<tr>
+<td><code>waste_ok</code></td>
+<td>Waste types accepted at station</td>
+</tr>
+<tr>
+<td><code>waste_notok</code></td>
+<td>Waste types not accepted at station</td>
+</tr>
+</tbody></table>
