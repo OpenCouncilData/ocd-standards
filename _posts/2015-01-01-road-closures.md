@@ -34,7 +34,7 @@ Field | Description
 
 Field | Description
 ------|------------
-`end_date`, `end_time` | As for `start_date`, `start_time` for the anticipated end of the closure, if known.
+`end_date`,`end_time`| As for `start_date`, `start_time` for the anticipated end of the closure, if known.
 `reason`| One of: `Works` (including road works, building construction, water mains), `Event`, `Unplanned` (e.g. emergency maintenance), `Crash`, `Natural` (fire, flood, weather)
 `reason_desc`|Free text description of the reason for the closure or restriction.
 `status_desc`|Free text description of the extent of the closure or restriction.
