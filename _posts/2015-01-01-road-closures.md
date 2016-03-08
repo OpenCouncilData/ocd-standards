@@ -38,8 +38,8 @@ Field | Description
 `reason`| One of: `Works` (including road works, building construction, water mains), `Event`, `Unplanned` (e.g. emergency maintenance), `Crash`, `Natural` (fire, flood, weather)
 `reason_desc`|Free text description of the reason for the closure or restriction.
 `status_desc`|Free text description of the extent of the closure or restriction.
-`direction`: Direction in which traffic is affected. One of `Both`, `Inbound`,`Outbound`,`North`,`South`,`West`,`East`, etc.
-`updated`: The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, `2015-06-04T08:15+10`)
+`direction`| Direction in which traffic is affected. One of `Both`, `Inbound`,`Outbound`,`North`,`South`,`West`,`East`, etc.
+`updated`| The most recent date and time at which this information was known to be current, in combined ISO8601 format (eg, `2015-06-04T08:15+10`)
 
 #### Optional fields
 
