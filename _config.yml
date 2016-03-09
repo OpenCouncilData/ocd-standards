@@ -5,5 +5,7 @@ highlighter: rouge
 safe: false
 title: 'Open Council Data Standards'
 markdown: kramdown
+kramdown:
+    input: GFM
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]

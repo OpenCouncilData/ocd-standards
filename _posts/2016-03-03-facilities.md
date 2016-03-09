@@ -38,8 +38,8 @@ Types: `library`, `aged care`, `neighbourhood house`, `health clinic`, `medical 
 
 Field | Description
 ------|------------
-`owned_by`:The council name, or other organisation, that owns the facility.
-`managed_by`:The council name, or other organisation, that manages the facility.
+`owned_by`|The council name, or other organisation, that owns the facility.
+`managed_by`|The council name, or other organisation, that manages the facility.
 `contact_ph`| The facility's telephone number.
 `url`| A URL with more information about the facility.
 `subtype` | A subclassification according to the council's needs. (No defined list of these at present.)
