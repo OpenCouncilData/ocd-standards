@@ -1,0 +1,133 @@
+<h2 id="childcare-centres-01-draft-for-comment">Childcare Centres 0.1 (draft for comment)</h2>
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>“Facilities” are a broad range of services and amenities provided by the council which generally meet three criteria:<br />
+- they are in a specific building<br />
+- they are accessible by certain members of the public, at least sometimes<br />
+- they generally involve interaction with staff.</p>
+
+<p>The range of services provided varies greatly across the country. It would be very difficult to define a precise vocabulary which every council agrees on, so if none the proposed types fits your need, please use another, and please open an issue or start a discussion to suggest it.</p>
+
+<p>→ <i><strong><a href="http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&amp;q=&amp;tags=facilities">Find datasets tagged [facilities] on data.gov.au</a></strong></i></p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Format</td>
+      <td>Point data. CSV (preferred), GeoJSON</td>
+    </tr>
+    <tr>
+      <td>Dataset name</td>
+      <td>[Council name] services and facilities</td>
+    </tr>
+    <tr>
+      <td>data.gov.au tag</td>
+      <td><code>facilities</code>, <code>opencouncildata</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>lat</code>, <code>lon</code></td>
+      <td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>Name of the facility. Each should be unique if at all possible.</td>
+    </tr>
+    <tr>
+      <td><code>type</code></td>
+      <td>Primary classification, from the list above.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Types: <code>library</code>, <code>aged care</code>, <code>neighbourhood house</code>, <code>health clinic</code>, <code>medical service</code>, <code>food service</code>, <code>place of worship</code>, <code>childcare</code>, <code>kindergarten</code>, <code>swimming pool</code>, <code>gym</code></p>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>owned_by</code></td>
+      <td>The council name, or other organisation, that owns the facility.</td>
+    </tr>
+    <tr>
+      <td><code>managed_by</code></td>
+      <td>The council name, or other organisation, that manages the facility.</td>
+    </tr>
+    <tr>
+      <td><code>contact_ph</code></td>
+      <td>The facility’s telephone number.</td>
+    </tr>
+    <tr>
+      <td><code>url</code></td>
+      <td>A URL with more information about the facility.</td>
+    </tr>
+    <tr>
+      <td><code>subtype</code></td>
+      <td>A subclassification according to the council’s needs. (No defined list of these at present.)</td>
+    </tr>
+    <tr>
+      <td><code>address</code></td>
+      <td>Street address. E.g. “274 Gower Street, Preston, VIC 3072”</td>
+    </tr>
+    <tr>
+      <td><code>access</code></td>
+      <td>Free text description of accessibility. For example: “Fully accessible to wheelchair users; disabled parking at front.”</td>
+    </tr>
+    <tr>
+      <td><code>monday</code>, <code>tuesday</code>, <code>wednesday</code>, <code>thursday</code>, <code>friday</code>, <code>saturday</code>, <code>sunday</code></td>
+      <td>Normal opening hours on each day, in 24 hour <code>HH:MM-HH:MM</code> format. For example: <code>08:00-17:30</code>.</td>
+    </tr>
+    <tr>
+      <td><code>holiday</code></td>
+      <td>Normal opening hours on public holidays.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>type2</code></td>
+      <td>If a facility fits equally into several categories (for example, a childcare centre is also a kindergarten), add the extra type here. If there are two distinct services housed together (for example, a childcare centre and a maternal health clinic), it’s better to have two distinct entries with slightly different locations.</td>
+    </tr>
+    <tr>
+      <td><code>ref</code></td>
+      <td>The internal council ID for the facility, if any.</td>
+    </tr>
+  </tbody>
+</table>

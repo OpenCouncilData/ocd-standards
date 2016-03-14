@@ -1,0 +1,147 @@
+<h2 id="venues-for-hire-02-draft-for-comment">Venues for Hire 0.2 (draft for comment)</h2>
+
+<p><strong>(<a href="https://github.com/okfnau/open-council-data/issues">Comments welcome!</a>)</strong></p>
+
+<p>Venues for hire are spaces that can be hired by members of the public to run private events. Typically they include town halls, community halls, auditoriums, meeting rooms, sports facilities and outdoor spaces.</p>
+
+<p>→ <i><strong><a href="http://data.gov.au/dataset?sort=extras_harvest_portal+asc%2C+score+desc&amp;q=&amp;tags=venues">Find datasets tagged [venues] on data.gov.au</a></strong></i></p>
+
+<h4 id="general-recommendations">General recommendations:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Format</td>
+      <td>Point data. CSV (preferred), GeoJSON</td>
+    </tr>
+    <tr>
+      <td>Dataset name</td>
+      <td>[Council name] venues for hire</td>
+    </tr>
+    <tr>
+      <td>data.gov.au tag</td>
+      <td><code>venues</code>, <code>opencouncildata</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>lat</code>, <code>lon</code></td>
+      <td>Latitude, longitude, decimal degrees. (EPSG:4326)</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>Name of the venue, which should be unique. For example, “Glenroy Community Hall”</td>
+    </tr>
+    <tr>
+      <td><code>type</code></td>
+      <td>One of: <code>hall</code>, <code>community centre</code>, <code>function room</code>, <code>meeting room</code>, <code>auditorium</code>, <code>gallery</code>, <code>sports</code>, <code>outdoor</code>, <code>building</code> (for whole buildings that don’t fit other categories), or use your own if needed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>address</code></td>
+      <td>Street address.</td>
+    </tr>
+    <tr>
+      <td><code>capacity</code></td>
+      <td>The number of people the space holds.</td>
+    </tr>
+    <tr>
+      <td><code>accessible</code></td>
+      <td><code>yes</code> if accessible for wheelchair users, <code>no</code> if not.</td>
+    </tr>
+    <tr>
+      <td><code>access</code></td>
+      <td>Free text description of accessibility. For example, “Wheelchair lift at front entrance, and accessible toilets.”</td>
+    </tr>
+    <tr>
+      <td><code>image</code></td>
+      <td>URL of one image of the venue.</td>
+    </tr>
+    <tr>
+      <td><code>url</code></td>
+      <td>URL of a page with more information about the venue.</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>Free text description of the venue.</td>
+    </tr>
+    <tr>
+      <td><code>fee_desc</code></td>
+      <td>Free text description of fees charged. (Generally these are complex and have parameters such as time of day, day of week, concessions available etc.)</td>
+    </tr>
+    <tr>
+      <td><code>facilities</code></td>
+      <td>Comma-separated list of keywords representing facilities available at the venue: <code>kitchen</code>, <code>wi-fi</code>, <code>projector</code>, <code>stage</code>, <code>chairs</code>, <code>tables</code>, <code>speakers</code>, <code>microphone</code>, <code>video recording</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>notes</code></td>
+      <td>Free text description of any special notes related to hiring. For example, “All functions must finish by 10pm Sunday to Thursday or by 11pm Fridays and Saturdays.”</td>
+    </tr>
+    <tr>
+      <td><code>alcohol</code></td>
+      <td>One of <code>sold</code> (there is a bar which sells alcohol), <code>no</code> (alcohol must not be brought to the venue), <code>allowed</code> (hirers may provide alcohol - include any restrictions in <code>notes</code> field)</td>
+    </tr>
+    <tr>
+      <td><code>phone</code></td>
+      <td>Phone number to call for more information about the venue.</td>
+    </tr>
+    <tr>
+      <td><code>email</code></td>
+      <td>Email address for more information about the venue.</td>
+    </tr>
+    <tr>
+      <td><code>form_url</code></td>
+      <td>URL for booking this venue, either with online form or PDF.</td>
+    </tr>
+    <tr>
+      <td><code>dimensions</code></td>
+      <td>Free text field for the dimensions of the venue. For example: “14m by 14m, with 6m by 3m stage”.</td>
+    </tr>
+    <tr>
+      <td><code>ref</code></td>
+      <td>The internal council ID for the venue, if any.</td>
+    </tr>
+  </tbody>
+</table>

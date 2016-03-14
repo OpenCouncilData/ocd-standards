@@ -1,0 +1,114 @@
+<h1 id="councillors-01">Councillors 0.1</h1>
+<p>Councillors are the elected representatives of the council, usually representing a specific ward (area). The spreadsheet can include just the current elected councillors, or previous councillors too.</p>
+
+<h4 id="general-recommendations">General recommendations</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Format</td>
+      <td>CSV, RSS</td>
+    </tr>
+    <tr>
+      <td>Dataset name</td>
+      <td>[Council name] councillors</td>
+    </tr>
+    <tr>
+      <td>data.gov.au tags</td>
+      <td><code>opencouncildata</code>, <code>councillors</code>, <code>elections</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="required-fields">Required fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>name</code></td>
+      <td>Name of the councillor. Do not include “Cr” or “Councillor” prefix.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recommended-fields">Recommended fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>title</code></td>
+      <td>The title of the councillor, such as “Lord Mayor”, “Deputy Mayor”, or “Councillor”.</td>
+    </tr>
+    <tr>
+      <td><code>ward_name</code></td>
+      <td>Name of the ward the councillor represents.</td>
+    </tr>
+    <tr>
+      <td><code>ward_id</code></td>
+      <td>External ID of the ward. In Victoria, this should be the VicMap WARD_NUM (eg, Glenferrie is 50704)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="optional-fields">Optional fields</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>term_start</code></td>
+      <td>Date the member’s term began.</td>
+    </tr>
+    <tr>
+      <td><code>term_end</code></td>
+      <td>Date the member’s term ends/ended. For currently serving councillors, this can be ommitted or be the date of the next election.</td>
+    </tr>
+    <tr>
+      <td><code>portfolio</code></td>
+      <td>The portfolio held by the councillor, if any. Multiple portfolios should be separated by semicolons.</td>
+    </tr>
+    <tr>
+      <td><code>phone_office</code></td>
+      <td>Office phone number.</td>
+    </tr>
+    <tr>
+      <td><code>phone_mobile</code></td>
+      <td>Mobile phone number.</td>
+    </tr>
+    <tr>
+      <td><code>email</code></td>
+      <td>Email address.</td>
+    </tr>
+    <tr>
+      <td><code>url</code></td>
+      <td>URL to page with more information about the councillor.</td>
+    </tr>
+    <tr>
+      <td><code>image_url</code></td>
+      <td>URL to image of the councillor.</td>
+    </tr>
+  </tbody>
+</table>
