@@ -14,6 +14,7 @@ Format|CSV, RSS
 Dataset name| [Council name] councillors
 data.gov.au tags| `opencouncildata`, `councillors`, `elections`
 
+
 #### Required fields
 
 Field|Description
