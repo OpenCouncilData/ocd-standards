@@ -31,7 +31,7 @@ Field | Description
 `name`| Name of the facility. Each should be unique if at all possible.
 `type`| Primary classification, from the list above.
 
-Types: `library`, `aged care`, `neighbourhood house`, `health clinic`, `medical service`, `food service`, `place of worship`, `childcare`, `kindergarten`, `swimming pool`, `gym`
+Types: `library`, `aged care`, `neighbourhood house`, `health clinic`, `medical service`, `food service`, `place of worship`, `childcare`, `kindergarten`, `swimming pool`, `gym`,`information center`
 
 
 #### Recommended fields
