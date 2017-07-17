@@ -2,9 +2,13 @@ These are lightweight standards for Australian councils publishing open data. Th
 
 [Steve Bennett](http://stevebennett.me) (City of Melbourne) is the de facto maintainer of the standards. [Send email](mailto:stevage@gmail.com) if you're interested in helping out.
 
-### Why
+### Goals
 
- To allow datasets from different councils to be easily joined up into something bigger, to support research, app development, knowledge exchange between councils, and use by the public.
+The Open Council Data Standards focus on making it easy to join datasets across council boundaries, to support research, app development, knowledge exchange between councils, and use by the public. They focus on datasets which are:
+
+- commonly held by many different councils
+- of use to data consumers in aggregated forms
+- not already available in aggregated forms
 
 See the number of datasets already published by councils on the [Open Council Data Map](http://map.opencouncildata.org).
 
@@ -18,9 +22,9 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallo
 We try to make conforming to the standard as easy as possible.
 
 1. As few required fields as possible.
-2. These are interoperability standards are for **transforming** already-collected data only.
-3. Match common field names as much as possible.
-4. Field names must be 10 characters or fewer, due to Shapefile attribute limitations.
+2. No requirements about data collection or managment, only **transformation** of existing data.
+3. Follow common field names as much as possible.
+4. Field names must be 10 characters or fewer, due to legacy Shapefile attribute limitations.
 
 ### General guidelines
 
