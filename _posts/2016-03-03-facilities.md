@@ -3,7 +3,7 @@ category: Services
 path: '/facilities'
 title: 'Facilities'
 ---
-## Childcare Centres 0.1 (draft for comment)
+## Facilities 0.1 (draft for comment)
 **([Comments welcome!](https://github.com/okfnau/open-council-data/issues))**
 
 "Facilities" are a broad range of services and amenities provided by the council which generally meet three criteria:
@@ -31,7 +31,7 @@ Field | Description
 `name`| Name of the facility. Each should be unique if at all possible.
 `type`| Primary classification, from the list above.
 
-Types: `library`, `aged care`, `neighbourhood house`, `health clinic`, `medical service`, `food service`, `place of worship`, `childcare`, `kindergarten`, `swimming pool`, `gym`
+Types: `library`, `aged care`, `neighbourhood house`, `health clinic`, `medical service`, `food service`, `place of worship`, `childcare`, `kindergarten`, `swimming pool`, `gym`, `transfer station`
 
 
 #### Recommended fields
@@ -47,6 +47,7 @@ Field | Description
 `access`| Free text description of accessibility. For example: "Fully accessible to wheelchair users; disabled parking at front."
 `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`| Normal opening hours on each day, in 24 hour `HH:MM-HH:MM` format. For example: `08:00-17:30`.
 `holiday`| Normal opening hours on public holidays.
+`desc`| Free text description of the facility
 
 #### Optional fields
 
