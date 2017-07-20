@@ -34,16 +34,14 @@ OpenCouncilData standards cover two types of datasets only:
     - No headers.
     - Indicate unknown or null values as empty values (two consecutive commas)
     - Add any additional, non-standard, fields after standard fields.
-    - Express locations with `lat` and `lon` columns, containing decimal degrees (eg -37.5). See the [CSV-geo-au format](https://github.com/NICTA/nationalmap/wiki/csv-geo-au) for more info.
+    - For **point datasets**, `lat` and `lon` columns are *required*, containing decimal degrees (eg -37.5). See the [CSV-geo-au format](https://github.com/NICTA/nationalmap/wiki/csv-geo-au) for more info.
 * **Spatial data** (lines and polygons): [GeoJSON format](http://geojson.org/geojson-spec.html).
-    - Locations must be given in EPSG 4326 (latitude/longitude, not projected coordinates).
+    - Locations must be given in [EPSG:4326](http://spatialreference.org/ref/epsg/wgs-84/) (latitude/longitude in decimal degrees, not projected coordinates such as eastings and northings).
 
 Requirements that apply to both types:
 
 * Express dates as YYYY-MM-DD. Express times as either "2017-01-20T04:30Z" (UTC time) or "2017-01-20T14:30T10" (local time with timezone). [More information](https://en.wikipedia.org/wiki/ISO_8601).
-* Numeric values should be provided as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
-* Spatial data should presented as raw latitude/longitude ([EPSG:4326](http://spatialreference.org/ref/epsg/wgs-84/)), not eastings and northings (projected coordinates).
-* Spatial data should be provided in [CSV-geo-au format](https://github.com/NICTA/nationalmap/wiki/csv-geo-au) if point data, and also [GeoJSON](http://geojson.org/geojson-spec.html).
+* Express umeric values as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
 
 For more advice, including licensing, please see the [Open Council Data Toolkit](http://opencouncildata.org).
 
