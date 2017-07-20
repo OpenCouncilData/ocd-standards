@@ -25,9 +25,7 @@ Field | Description
 `lat`, `lon`| Latitude, longitude, decimal degrees. (EPSG:4326) 
 `type`| Primary classification, from the table below.
 
-Types: `bbq`, `light`, `drinking water`, `bike parking`, `seat`, `bollard`, `postbox`, `flagpole`, `table`, `sign`, 
-
-Type | Description/synonyms | Subtypes
+Type | Description/synonyms | Possible subtypes
 ---- |-------------|---------
 `bbq`|Barbecue | `electric`,`gas`
 `light`|Street light, street lamp
@@ -44,7 +42,6 @@ Type | Description/synonyms | Subtypes
 `tree guard`|Protective structure around a tree.
 `bin`|Rubbish/litter/garbage/recycling bin for the public.|`landfill`,`recycling`,`commingled` (for waste that will be separated into landfill and recycling later),`organic`,`cardboard`
 `advertising`|Signs, poster poles, banner spaces used for promotions.|`bollard` (advertising column), `banner`, `billboard`
-
 
 #### Recommended fields
 
