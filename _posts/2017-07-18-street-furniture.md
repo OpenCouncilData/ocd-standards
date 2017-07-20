@@ -42,7 +42,8 @@ Type | Description/synonyms | Subtypes
 `info`|Information boards, maps, plaques|`map`, `history`
 `planter`|Raised box for flowers and small plants.
 `tree guard`|Protective structure around a tree.
-
+`bin`|Rubbish/litter/garbage/recycling bin for the public.|`landfill`,`recycling`,`commingled` (for waste that will be separated into landfill and recycling later),`organic`,`cardboard`
+`advertising`|Signs, poster poles, banner spaces used for promotions.|`bollard` (advertising column), `banner`, `billboard`
 
 
 #### Recommended fields
@@ -62,3 +63,4 @@ Field | Description
 `access`| Free text description of accessibility. For example: "Fully accessible to wheelchair users; disabled parking at front."
 `desc`| Free text description of the item.
 `model`|A code identifying the specific manufacturing model of the item.
+`info`|URL of a page with relevant information. For instance, bookable banner spaces could link to a page with information about booking them.
