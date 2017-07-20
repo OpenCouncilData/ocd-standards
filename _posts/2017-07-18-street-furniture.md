@@ -1,5 +1,5 @@
 ---
-category: Services
+category: Infrastructure
 path: '/street-furniture'
 title: 'Street furniture'
 ---
