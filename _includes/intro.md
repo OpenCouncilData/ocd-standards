@@ -18,25 +18,32 @@ allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallo
 </iframe>
  -->
 
-### Principles
+### Principles for standards
 We try to make conforming to the standard as easy as possible.
 
-1. As few required fields as possible.
+1. Minimise required fields.
 2. No requirements about data collection or managment, only **transformation** of existing data.
 3. Follow common field names as much as possible.
 4. Field names must be 10 characters or fewer, due to legacy Shapefile attribute limitations.
 
-### General guidelines
+### General guidelines for all datasets
 
-* All date fields should be provided as YYYY-MM-DD
-* Additional fields can (and should) be provided, but should be included after recommended fields.
+OpenCouncilData standards cover two types of datasets only:
+
+* **Tabular datasets** (spreadsheets), **point datasets** (spatial): [CSV format](http://frictionlessdata.io/guides/csv/).
+    - No headers.
+    - Indicate unknown or null values as empty values (two consecutive commas)
+    - Add any additional, non-standard, fields after standard fields.
+    - Express locations with `lat` and `lon` columns, containing decimal degrees (eg -37.5). See the [CSV-geo-au format](https://github.com/NICTA/nationalmap/wiki/csv-geo-au) for more info.
+* **Spatial data** (lines and polygons): [GeoJSON format](http://geojson.org/geojson-spec.html).
+    - Locations must be given in EPSG 4326 (latitude/longitude, not projected coordinates).
+
+Requirements that apply to both types:
+
+* Express dates as YYYY-MM-DD. Express times as either "2017-01-20T04:30Z" (UTC time) or "2017-01-20T14:30T10" (local time with timezone). [More information](https://en.wikipedia.org/wiki/ISO_8601).
 * Numeric values should be provided as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
 * Spatial data should presented as raw latitude/longitude ([EPSG:4326](http://spatialreference.org/ref/epsg/wgs-84/)), not eastings and northings (projected coordinates).
 * Spatial data should be provided in [CSV-geo-au format](https://github.com/NICTA/nationalmap/wiki/csv-geo-au) if point data, and also [GeoJSON](http://geojson.org/geojson-spec.html).
-* Unknown information should be indicated as:
-    - CSV: empty value (two consecutive commas)
-    - GeoJSON: no attribute (preferred), or ""
-    - Shapefile: no attribute (preferred), or ""
 
 For more advice, including licensing, please see the [Open Council Data Toolkit](http://opencouncildata.org).
 
