@@ -783,4 +783,14 @@ h4 {
     #oklogo { height: 75px; }
 }
 
+figure {
+    text-align:center;
+    margin:1.5em;
+}
+figcaption {
+    font-weight:bold;
+}
 
+code {
+    background:hsl(204, 58%, 95%);
+}

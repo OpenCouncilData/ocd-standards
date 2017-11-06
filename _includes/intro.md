@@ -12,6 +12,13 @@ The Open Council Data Standards focus on making it easy to join datasets across 
 
 See the number of datasets already published by councils on the [Open Council Data Map](http://map.opencouncildata.org).
 
+The long term vision is an Open Council Data Platform, which automatically aggregates conformant datasets from all councils. You can see [a prototype here](https://opencouncildata.github.io/Datasite).
+
+<figure>
+<img src="images/garbage-zones-aggregated.png" style="width:357px;height:285px;">
+<figcaption>Garbage collection zones published by Victorian councils (July 2017).</figcaption>
+</figure>
+
 <!-- <iframe width='100%' height='480' frameborder='0'
 src='https://stevage.cartodb.com/viz/43494ef2-61f3-11e5-a667-0e4fddd5de28/embed_map'
 allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
