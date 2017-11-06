@@ -47,8 +47,9 @@ OpenCouncilData standards cover two types of datasets only:
 
 Requirements that apply to both types:
 
-* Express dates as YYYY-MM-DD. Express times as either "2017-01-20T04:30Z" (UTC time) or "2017-01-20T14:30T10" (local time with timezone). [More information](https://en.wikipedia.org/wiki/ISO_8601).
-* Express umeric values as a single numeric value ("1.3"). Don't include a range ("1.2 - 1.4"), nor units ("1.3m").
+* Express dates as `2017-01-20`. 
+* Express times as either `2017-01-20T04:30Z` (UTC time) or `2017-01-20T14:30T10` (local time with timezone). [More information](https://en.wikipedia.org/wiki/ISO_8601).
+* Express numeric values as a single numeric value: `1.3`. Don't include a range (`1.2 - 1.4`), nor units (`1.3m`).
 
 For more advice, including licensing, please see the [Open Council Data Toolkit](http://opencouncildata.org).
 
