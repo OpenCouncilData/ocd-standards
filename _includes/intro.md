@@ -1,6 +1,6 @@
 These are lightweight standards for Australian councils publishing open data. This is an open collaboration between councils, Open Knowledge Australia, MAV Technology, the Local Government Spatial Reference Group and other interested participants. 
 
-[Steve Bennett](http://stevebennett.me) (City of Melbourne) is the de facto maintainer of the standards. [Send email](mailto:stevage@gmail.com) if you're interested in helping out.
+[Steve Bennett](http://stevebennett.me) is the de facto maintainer of the standards. [Send email](mailto:stevage@gmail.com) if you're interested in helping out.
 
 ### Goals
 
